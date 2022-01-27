@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  text-align: center;
+  color: rgba(71, 160, 100, 0.87);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.329);  
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+    position: relative;
+}
+table > tr > td.end{
+    border: 1px solid;
+}
+
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+thead{
+    background-color: rgba(96, 207, 133, 0.87);
+    color: rgb(56, 144, 170);
+    height: 40px;
+}
+
+thead > tr > th{
+    position: sticky;
+    top: 0;
+    background-color: rgba(96, 207, 133, 0.87);
+}
+
+td {
+    border: 0.5px solid rgba(96, 207, 133, 0.342);
+}
+
+tr.dados > td.end:hover{
+    cursor: pointer;
+    background-color: rgb(56, 99, 219);
+    color: white;
+}
+
+tbody > tr:nth-child(odd){
+    background-color: rgba(94, 174, 199, 0.685);
+}
+
+tr.dados > td.end{
+    text-align: left;
+    width: 400px;
+    height: 20px;
+    padding-left: 4px;
+}
+
+tr.dados > td.valor{
+    padding-right: 4px;
+    text-align: right;
+    width: 70px;
+    height: 25px;
+}
