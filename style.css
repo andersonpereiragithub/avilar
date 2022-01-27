@@ -26,7 +26,7 @@ caption{
 
 thead{
     background-color: rgba(96, 207, 133, 0.87);
-    color: rgb(56, 144, 170);
+    color: rgb(56, 143, 170);
     height: 40px;
 }
 
@@ -47,7 +47,7 @@ tr.dados > td.end:hover{
 }
 
 tbody > tr:nth-child(odd){
-    background-color: rgba(94, 174, 199, 0.685);
+    background-color: rgba(94, 174, 199, 0.301);
 }
 
 tr.dados > td.end{
