@@ -18,7 +18,7 @@ table{
     border-collapse: collapse;
     margin: auto;
     position: relative;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.836);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.664);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -35,12 +35,12 @@ caption{
 }
 
 thead{
-    background-color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor4), var(--cor1));
     color: white;
     height: 40px;
 }
 thead.descricao{
-    background-color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor4), var(--cor1));
     color: white;
     height: 40px;
     position: sticky;
