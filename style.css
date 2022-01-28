@@ -2,7 +2,9 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+
 }
+
 h1{
   text-align: center;
   color: rgba(71, 160, 100, 0.87);
@@ -13,12 +15,18 @@ table{
     border-collapse: collapse;
     margin: auto;
     position: relative;
+    box-shadow: 1px 1px 5px black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 table > tr > td.end{
     border: 1px solid;
 }
 
 caption{
+    text-align: center;
+    color: rgba(71, 160, 100, 0.87);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.329); 
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px;
@@ -29,11 +37,12 @@ thead{
     color: rgb(56, 143, 170);
     height: 40px;
 }
-
-thead > tr > th{
+thead.descricao{
+    background-color: rgba(96, 207, 133, 0.87);
+    color: rgb(56, 143, 170);
+    height: 40px;
     position: sticky;
     top: 0;
-    background-color: rgba(96, 207, 133, 0.87);
 }
 
 td {
@@ -54,12 +63,26 @@ tr.dados > td.end{
     text-align: left;
     width: 400px;
     height: 20px;
-    padding-left: 4px;
+    padding-left: 10px;
 }
-
+tr > td > abbr > img{
+    width: 16px;
+    height: 16px;
+    padding-right: 5px;
+}
 tr.dados > td.valor{
     padding-right: 4px;
     text-align: right;
     width: 70px;
     height: 25px;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: rgba(56, 100, 219, 0.774);
+    color: white;
+    text-align: center;
+    margin: 50px;
+    padding: 3px;
+    border-radius: 10px;
 }
