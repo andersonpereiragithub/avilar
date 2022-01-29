@@ -14,32 +14,21 @@
     --fonte-destaque: 'Bebas Neue', cursive;
 }
 
-table{
+
+/*      TABELA DE IMÓVEIS       */
+table#tab{
     border-collapse: collapse;
     margin: auto;
     position: relative;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.664);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    padding-top: 100px;
 }
+
 table > tr > td.end{
     border: 1px solid;
 }
 
-caption{
-    text-align: center;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.329); 
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 10px;
-}
-
 thead{
-    background-image: linear-gradient(to right, var(--cor4), var(--cor1));
-    color: white;
-    height: 40px;
-}
-thead.descricao{
     background-image: linear-gradient(to right, var(--cor4), var(--cor1));
     color: white;
     height: 40px;
@@ -47,18 +36,19 @@ thead.descricao{
     top: 0;
 }
 
-td {
-    border: 0.5px solid rgba(96, 207, 133, 0.342);
-}
 
-tr.dados > td.end:hover{
+tr.dados:hover{
     cursor: pointer;
-    background-color: rgb(56, 99, 219);
+    background-color: var(--cor1);
     color: white;
 }
 
-tbody > tr:nth-child(odd){
+tr.titulo:nth-child(odd){
     background-color: rgba(60, 66, 60, 0.13);
+}
+
+tr.dados:nth-child(odd):hover{
+    background-color: var(--cor1);
 }
 
 tr.dados > td.end{
@@ -77,4 +67,8 @@ tr.dados > td.valor{
     text-align: right;
     width: 70px;
     height: 25px;
+}
+
+td {
+    border: 0.5px solid rgba(96, 207, 133, 0.342);
 }

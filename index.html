@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_tabela.css">
+    <link rel="stylesheet" href="style_abas.css">
     <title>Imóveis</title>
 </head>
 <body>
@@ -14,16 +15,22 @@
             <caption>Imóveis disponíveis para Locação.</caption>
         </h2>
       </header>
-    
-    <table>
-        
+    <!-- TABELA DE IMOVEIS -->
+    <table id="tab">
+        <thead class="abas">
+            <tr class="tipo">
+                <th class="loca"><div>
+                    <div id="loc"><h4>LOCAÇÃO</h4></div><div id="ven"><h4>VENDA</h4></div>
+                </div></th>
+            </tr>
+        </thead>
         <thead class="descricao">
             <tr class="titulo">
-                <th style="border-top-left-radius: 25px;" class="end" scope="col">Endereço</th>
+                <th class="end" scope="col">Endereço</th>
                 <th class="valor" scope="col">Aluguel</th>
                 <th class="valor" scope="col">IPTU</th>
                 <th class="valor" scope="col">Condomínio</th>
-                <th style="border-top-right-radius: 25px;" class="valor" scope="col">Total</th>
+                <th class="valor" scope="col">Total</th>
             </tr>
         </thead>
 
