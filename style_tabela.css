@@ -16,7 +16,13 @@
 
 
 /*      TABELA DE IMÓVEIS       */
-table#tab{
+table#tab1{
+    border-collapse: collapse;
+    margin: auto;
+    position: relative;
+    padding-top: 100px;
+}
+table#tab2{
     border-collapse: collapse;
     margin: auto;
     position: relative;
