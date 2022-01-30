@@ -14,6 +14,9 @@
     --fonte-destaque: 'Bebas Neue', cursive;
 }
 
+th {
+    text-align: center;
+}
 
 /*      TABELA DE IMÓVEIS       */
 table#tab1{

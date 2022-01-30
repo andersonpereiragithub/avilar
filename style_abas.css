@@ -11,21 +11,16 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serfi;
     --fonte-destaque: 'Bebas Neue', cursive;
 }
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
 .nav_pastas{
     width: 713px;
     height: 1151px;
-    margin: 210px auto;
-    background-color: var(--cor1);
+    margin: auto;
+    
     position: relative;
 }
 
 .nav_pastas ul{
-    list-style: none;
+    List-style: none;
 }
 
 .nav_pastas ul li{
@@ -46,14 +41,15 @@
     background-color: var(--cor5);
 }
 
-.rd_pastas{
+div > .rd_pastas{
     display: none;
 }
+
 .contexto{
-    border-top: 5px solid #e54e43;
-    background-color: yellow;
+    border-top: 5px solid var(--cor5);
     display: none;
     position: absolute;
+    left: 0px;
 }
 
 .rd_abas:checked ~ .contexto{
