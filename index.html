@@ -18,21 +18,12 @@
 
       
     <!-- TABELA DE IMOVEIS -->
-    <div >
-        <table id="tab1">
-            <thead class="abas">
-                <tr class="tipo">
-                    <th class="loca">
-                        <nav>
-                            <a id="loc" href="#">Locação</a>
-                            <a id="ven" href="#">Venda</a>
-                        </nav>
-                    </th>
-                </tr>
-            </thead>
-        </table>
-    </div>
-    <table id="tab2" >
+    <nav class="nav_pastas">
+        <ul>
+            <li>
+                <input type="radio" name="pastaS" class="rd_abas" id="aba1">
+                <label for="aba1">LOCAÇÃO</label>
+                <div class="contexto">    <table id="tab2" >
         <thead class="descricao">
             <tr class="titulo">
                 <th class="valor" scope="col">Endereço</th>
@@ -322,7 +313,16 @@
         <tfoot>
             
         </tfoot>
-    </table>
+    </table></div>
+            </li>
+            <li>
+                <input type="radio" name="pastaS" class="rd_abas" id="aba2">
+                <label for="aba2">VENDA</label>
+                <div class="contexto"></div>
+            </li>
+        </ul>
+    </nav>
+
     <footer>
         <p>Avilar Imóveis - Tel.: (32) 3213-0353</p>
     </footer>
