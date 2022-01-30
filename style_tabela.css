@@ -38,7 +38,6 @@ thead{
 
 
 tr.dados:hover{
-    cursor: pointer;
     background-color: var(--cor1);
     color: white;
 }

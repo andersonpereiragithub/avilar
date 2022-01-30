@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+:root{
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serfi;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
 th.loca{
     border: 0px;
 
@@ -15,14 +27,17 @@ th.loca{
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
 }
 
-div{
+a{
+    width: 100px;
+    text-decoration: none;
+    font-family: bold var(--fonte-padrao);
     display: inline-block;
     color: white;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     align-items: flex-start;
 }
-div#loc{
+a#loc{
     background-color: var(--cor4);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -31,7 +46,7 @@ div#loc{
 
 }
 
-div#ven{
+a#ven{
     background-color: var(--cor1);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
