@@ -24,6 +24,7 @@ header{
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
+    margin-bottom: 20px;
     box-shadow: 1px 1px 3px var(--cor5);
 }
 
@@ -32,7 +33,7 @@ header > h1 {
     font-family: var(--fonte-destaque);
     font-size: 3em;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);    
 }
 
@@ -50,7 +51,7 @@ header > p{
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(170, 243, 170, 0.377);
+    background-color: white;
 }
 
 h1{
