@@ -15,13 +15,20 @@
             <caption>Imóveis disponíveis para Locação.</caption>
         </h2>
       </header>
-      
+
+      <script>
+            var info = window.document.getElementById('div#test');
+
+          function mudaCor(){
+              console.log(info);
+          }
+      </script>
     <!-- TABELA DE IMOVEIS -->
     <nav class="nav_pastas">
         <ul>
             <li>
-                <input type="radio" name="pastaS" class="rd_abas" id="aba1" style="display: none;">
-                <label for="aba1">LOCAÇÃO</label>
+                <input type="radio" name="pastaS" class="rd_abas" id="aba1" style="display: none;" checked>
+                <label id="test" for="aba1">LOCAÇÃO</label>
                     <div class="contexto">    
                                                 <!--TABELA DE LOCAÇÕES-->
                         <table id="tab2" >
@@ -44,7 +51,8 @@
                                     <td class="valor" style="font-size: 12px;">1.124,00</td>
                                 </tr>
                                 <tr class="dados">
-                                    <td class="end"><abbr title="03 quartos, garagem, com elevador - área 90m2"><img src="imagens/info2.png" alt="informacao"></abbr>Rua Chanceler Oswaldo Aranha, nº 180/402</td>
+                                    <td class="end">
+                                        <abbr style="text-decoration: none; cursor: copy;" title="03 quartos, garagem, com elevador - área 90m2">Rua Chanceler Oswaldo Aranha, nº 180/402</abbr></td>
                                     <td class="valor">1.100,00</td>
                                     <td class="valor">155,56</td>
                                     <td class="valor">500,00</td>

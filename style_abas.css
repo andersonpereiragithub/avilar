@@ -15,7 +15,6 @@
     width: 713px;
     height: 1151px;
     margin: auto;
-    
     position: relative;
 }
 
@@ -29,17 +28,23 @@
 
 .nav_pastas label{
     width: 100px;
-    padding: 25px;
+    padding: 5px;
     background-color: var(--cor2);
     display: block;
     color: var(--cor0);
     cursor: pointer;
     text-align: center;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .rd_abas:checked ~ label{
     background-color: var(--cor5);
 }
+
+.nav_pastas label#test:checked{
+    background-color: var(--cor5);
+}
+
 
 div > .rd_pastas{
     display: none;
