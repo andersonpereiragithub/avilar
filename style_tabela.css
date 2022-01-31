@@ -45,7 +45,6 @@ thead{
     top: 0;
 }
 
-
 tr.dados:hover{
     background-color: var(--cor1);
     color: white;
