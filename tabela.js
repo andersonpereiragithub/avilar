@@ -12,10 +12,11 @@ imagem.setAttribute('src', 'imagens/info2.png');
 imagem.setAttribute('alt', 'informacao');
 
 let descricao = document.createElement('abbr');
-descricao.setAttribute("title", "02 quartos com garagem presa", "class", "valor" );
+descricao.setAttribute("style", "text-decoration: none; cursor: copy;" )
+descricao.setAttribute("title", "02 quartos com garagem");
+descricao.setAttribute("class", "valor");
+
 descricao.innerHTML = 'Rua Paula Lina, 175/102';
-
-
 
 imagem.appendChild(descricao);
 
@@ -35,6 +36,7 @@ col_4.innerHTML = '130,00';
 
 let col_5 = document.createElement('td');
 col_5.setAttribute("class", "valor");
+col_5.setAttribute("style", "font-size: 12px;");
 col_5.innerHTML = '1.330,00';
 
 linha.appendChild(col_1);
