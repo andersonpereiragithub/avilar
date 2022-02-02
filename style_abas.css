@@ -13,7 +13,7 @@
 }
 .nav_pastas{
     width: 713px;
-    height: 1151px;
+    height: 1300px;
     margin: auto;
     position: relative;
 }
@@ -27,13 +27,15 @@
 }
 
 .nav_pastas label{
-    width: 100px;
-    padding: 5px;
+    width: 150px;
+    padding: 8px;
     background-color: var(--cor2);
     display: block;
     color: var(--cor0);
     cursor: pointer;
     text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
     border-radius: 20px 20px 0px 0px;
 }
 
