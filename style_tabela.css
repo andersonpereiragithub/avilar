@@ -14,7 +14,12 @@
     --fonte-destaque: 'Bebas Neue', cursive;
 }
 
+th#i{
+    width: 40px;
+}
 th {
+    margin-left: 3px;
+    margin-right: 3px;
     text-align: center;
 }
 
@@ -67,7 +72,8 @@ tr.dados > td.end{
 tr > td > abbr > img{
     width: 16px;
     height: 16px;
-    padding-right: 5px;
+    padding-right: 18px;
+    padding-left: 18px;
 }
 tr.dados > td.valor{
     padding-right: 4px;
