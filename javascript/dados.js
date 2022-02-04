@@ -16,3 +16,11 @@ class Anuncio{
      return this.aluguel + this.iptu + this.condominio;
  }
 }
+
+function inserirNovo(){
+    var end = document.getElementById("endereco");
+    
+    var aluguel = document.getElementById("numAluguel");
+    var iptu = document.getElementById("numIptu");
+    var condominio = document.getElementById("numCond");
+}
