@@ -1,6 +1,7 @@
 class Anuncio{
- constructor(id, endereco, aluguel, iptu, condominio){
+ constructor(id, tipo, endereco, aluguel, iptu, condominio){
     this._id = id;
+    this.tipo = tipo;
     this._endereco = endereco;
     this._aluguel = aluguel; 
     this._iptu = iptu;
