@@ -1,35 +1,61 @@
+let tabela = document.getElementById('tabela_1');
+
 class Anuncio{
- constructor(id, tipo, endereco, aluguel, iptu, condominio){
+ constructor(id, tipo, endereco, aluguel, iptu, condominio, descricao){
     this._id = id;
     this.tipo = tipo;
     this._endereco = endereco;
     this._aluguel = aluguel; 
     this._iptu = iptu;
     this._condominio = condominio; 
-     
+    this._descricao = descricao;     
  }   
- get total(){
-     return this.calculaTotal();
- }
-
- 
 }
+
+class Linha {
+    constructor(){
+        this.tr = document.createElement('tr');
+        this.img = document.createElement('img');
+        this.abbr = document.createElement('abbr');
+        this.td0 = document.createElement('td');
+        this.td1 = document.createElement('td');
+        this.td2 = document.createElement('td');
+        this.td3 = document.createElement('td');
+        this.td4 = document.createElement('td');
+        this.td5 = document.createElement('td');
+    }
+    getLinha(){
+        this.tr.setAttribute('class', 'dados');
+        this.img.setAttribute('src', 'imagens/info2.png');
+        this.img.setAttribute('alt', 'informacao');
+        this.abbr.setAttribute('style', 'text-decoation: nome; cursor: copy;');
+        this.td0.setAttribute('class', 'info');
+        this.td1.setAttribute('class', 'end');
+        this.td2.setAttribute('class', 'valor');
+        this.td3.setAttribute('class', 'valor');
+        this.td4.setAttribute('class', 'valor');
+        this.td5.setAttribute('class', 'valor');
+        this.td5.setAttribute("style", "font-size: 12px;");
+    }
+    getMontarLinha(){
+        this.tr.appendChild(this.img);
+        this.tr.appendChild(this.abbr);
+    }
+
+}
+
 
 function inserirNovo(){
     var end = document.getElementById("endereco");
     var aluguel = document.getElementById("numAluguel").value;
-    console.log(typeof(aluguel));
     var iptu = document.getElementById("numIptu").value;
     var condominio = document.getElementById("numCond").value;
     var total = parseFloat(aluguel) + parseFloat(iptu) + parseFloat(condominio);
-    console.log(total);
 
     /* Imagem para exibir INFORMAÇÕES DO IMÓVEL */
 let imagem = document.createElement('img')
 imagem.setAttribute('src', 'imagens/info2.png');
 imagem.setAttribute('alt', 'informacao');
-
-let tabela = document.getElementById('tabela_1')
 
 /* Cria uma Linha */
 let linha = document.createElement('tr');
