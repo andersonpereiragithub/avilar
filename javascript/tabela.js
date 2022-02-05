@@ -1,9 +1,9 @@
+let tabela = document.getElementById('tabela_1')
+
 /* Imagem para exibir INFORMAÇÕES DO IMÓVEL */
 let imagem = document.createElement('img')
 imagem.setAttribute('src', 'imagens/info2.png');
 imagem.setAttribute('alt', 'informacao');
-
-let tabela = document.getElementById('tabela_1')
 
 /* Cria uma Linha */
 let linha = document.createElement('tr');
@@ -47,6 +47,7 @@ col_5.setAttribute("style", "font-size: 12px;");
 col_5.innerHTML = '1.330,00';
 
 /* Adiciona as Colunas na linha */
+linha.appendChild(col_1);
 linha.appendChild(col_2);
 linha.appendChild(col_3);
 linha.appendChild(col_4);
