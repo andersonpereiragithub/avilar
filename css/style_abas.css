@@ -27,20 +27,21 @@
 }
 
 .nav_pastas label{
-    width: 150px;
+    width: 100px;
     padding: 8px;
     background-color: var(--cor2);
     display: block;
-    color: var(--cor0);
+    color: var(--cor4);
     cursor: pointer;
     text-align: center;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 15px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .rd_abas:checked ~ label{
-    background-color: var(--cor5);
+    background-color: var(--cor4);
+    color: var(--cor0);
 }
 
 .nav_pastas label#test:checked{
@@ -52,7 +53,7 @@ div > .rd_pastas{
 }
 
 .contexto{
-    border-top: 5px solid var(--cor5);
+    /*border-top: 5px solid var(--cor0);*/
     display: none;
     position: absolute;
     left: 0px;

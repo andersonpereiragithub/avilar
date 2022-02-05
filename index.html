@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_tabela.css">
     <link rel="stylesheet" href="css/style_abas.css">
+    <link rel="stylesheet" href="css/style_cadastro.css">
     <title>Imóveis</title>
 </head>
 <body>
@@ -451,123 +452,39 @@
                     <label for="aba3">CADASTRO</label>
                     <div class="contexto">
                                          <!--TABELA DE CADASTRO-->
-                    <table id="tab1" >
-                        <thead class="descricao">
-                            <tr class="titulo">
-                                <th class="valor" scope="col">Endereço</th>
-                                <th class="valor" scope="col">Aluguel</th>
-                                <th class="valor" scope="col">IPTU</th>
-                                <th class="valor" scope="col">Condomínio</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tabela_1">
-                            <tr class="dados">
-                                <td class="end"><input type="text" name="endereco" id="endereco" placeholder="Endereço..."></td>
-                                <td class="valor"><input type="number" name="numAluguel" id="numAluguel" placeholder="Aluguel..."></td>
-                                <td class="valor"><input type="number" name="numIptu" id="numIptu" placeholder="IPTU..."></td>
-                                <td class="valor"><input type="number" name="numCond" id="numCond" placeholder="Condomínio..."></td>
-                                <td class="valor"><input type="button" value="Inserir" id="btnInserir" onclick="inserirNovo()"></td>
-                            </tr>
-                            <thead>
-                                <tr class="titulo2">
-                                    <th colspan="4" class="end" scope="col">CASAS COMERCIAIS</th>
-                                </tr>
-                            </thead>
-                            <tr class="dados">
-                                <td class="end"><input type="text" name="endereco" id="endereco" placeholder="Endereço..."></td>
-                                <td class="valor"><input type="number" name="numAluguel" id="numAluguel" placeholder="Aluguel..."></td>
-                                <td class="valor"><input type="number" name="numIptu" id="numIptu" placeholder="IPTU..."></td>
-                                <td class="valor"><input type="number" name="numCond" id="numCond" placeholder="Condomínio..."></td>
-                                <td class="valor"><input type="button" value="Inserir" id="btnInserir" onclick="inserirNovo()"></td>
-                            </tr>
-                            <thead>
-                                <tr class="titulo2">
-                                    <th colspan="4" class="end" scope="col">LOJAS</th>
-                                </tr>
-                            </thead>
-                            <tr class="dados">
-                                <td class="end"><input type="text" name="endereco" id="endereco" placeholder="Endereço..."></td>
-                                <td class="valor"><input type="number" name="numAluguel" id="numAluguel" placeholder="Aluguel..."></td>
-                                <td class="valor"><input type="number" name="numIptu" id="numIptu" placeholder="IPTU..."></td>
-                                <td class="valor"><input type="number" name="numCond" id="numCond" placeholder="Condomínio..."></td>
-                                <td class="valor"><input type="button" value="Inserir" id="btnInserir" onclick="inserirNovo()"></td>
-                            </tr>
-                            <thead>
-                                <tr class="titulo2">
-                                    <th colspan="4" class="end" scope="col">SALAS</th>
-                                </tr>
-                            </thead>
-                            <tr class="dados">
-                                <td class="end"><input type="text" name="endereco" id="endereco" placeholder="Endereço..."></td>
-                                <td class="valor"><input type="number" name="numAluguel" id="numAluguel" placeholder="Aluguel..."></td>
-                                <td class="valor"><input type="number" name="numIptu" id="numIptu" placeholder="IPTU..."></td>
-                                <td class="valor"><input type="number" name="numCond" id="numCond" placeholder="Condomínio..."></td>
-                                <td class="valor"><input type="button" value="Inserir" id="btnInserir" onclick="inserirNovo()"></td>
-                            </tr>
-                            <thead>
-                                <tr class="titulo2">
-                                    <th colspan="4" class="end" scope="col">GALPÕES</th>
-                                </tr>
-                            </thead>
-                            <tr class="dados">
-                                <td class="end"><input type="text" name="endereco" id="endereco" placeholder="Endereço..."></td>
-                                <td class="valor"><input type="number" name="numAluguel" id="numAluguel" placeholder="Aluguel..."></td>
-                                <td class="valor"><input type="number" name="numIptu" id="numIptu" placeholder="IPTU..."></td>
-                                <td class="valor"><input type="number" name="numCond" id="numCond" placeholder="Condomínio..."></td>
-                                <td class="valor"><input type="button" value="Inserir" id="btnInserir" onclick="inserirNovo()"></td>
-                            </tr>
-                            <thead>
-                                <tr class="titulo2">
-                                    <th colspan="4" class="end" scope="col">GARAGEM</th>
-                                </tr>
-                            </thead>
-                            <tr class="dados">
-                                <td class="end"><input type="text" name="endereco" id="endereco" placeholder="Endereço..."></td>
-                                <td class="valor"><input type="" name="numAluguel" id="numAluguel" placeholder="Aluguel..."></td>
-                                <td class="valor"><input type="number" name="numIptu" id="numIptu" placeholder="IPTU..."></td>
-                                <td class="valor"><input type="number" name="numCond" id="numCond" placeholder="Condomínio..."></td>
-                                <td class="valor"><input type="button" value="Inserir" id="btnInserir" onclick="inserirNovo()"></td>
-                            </tr>
-                            <style >
-                                td{
-                                    border: none;
-                                }
-                                input{
-                                    margin: 5px;
-                                    border-radius: 10px;
-                                    padding: 5px;
-                                }
-                                input#endereco{
-                                    width: 300px;
-                                    height: 30px;
-                                }
-                                input#numAluguel{
-                                    width: 100px;
-                                    height: 30px;
-                                }
-                                input#numIptu{
-                                    width: 100px;
-                                    height: 30px;
-                                }
-                                input#numCond{
-                                    width: 100px;
-                                    height: 30px;
-                                }
-                                input#btnInserir{
-                                    background-color: #3ddc84;
-                                    font-weight: bold;
-                                    font-size: 1.5em;
-                                    color: white;
-                                    border: none;
-                                }
-                            </style>
-                        </tbody>
-                        <tfoot>
-                                
-                        </tfoot>
-                </table>
+                        <div id="title">
+                                             <h3>Cadastrar de imóvel</h3>
                         </div>
-                    </li>
+                            <form action="">
+                                <div class="tipo">
+                                    <select name="tipoimovel" id="tipo">
+                                        <option value="Tipo de Imóvel" disabled="disabled"  selected="selected">Tipo de Imóvel</option>
+                                        <option value="Apartamento">Apartamento</option>
+                                        <option value="Casa">Casa Comercial</option>
+                                        <option value="Loja">Loja</option>
+                                        <option value="Sala">Sala</option>
+                                        <option value="Galpao">Galpão</option>
+                                    </select>
+                                </div>
+                                <div class="end">
+                                    <input type="text" name="endereco" id="endereco" placeholder="Endereço...">
+                                    <input type="text" name="numero" id="num" placeholder="Nº...">
+                                </div>
+                                <div>
+                                    <input type="text" name="numAluguel" id="numAluguel" placeholder="R$ Aluguel...">
+                                </div>
+                                <div>
+                                    <input type="text" name="numIptu" id="numIptu" placeholder="R$ IPTU...">
+                                </div>
+                                <div>
+                                    <input type="text" name="numCond" id="numCond" placeholder="R$ Condomínio...">
+                                </div>
+                                <div>
+                                    <input type="button" value="Inserir" id="btnInserir" onclick="inserirNovo()">
+                                </div>
+                            </form>
+                    </div>
+                </li>
             </ul>
         </nav>
     <footer>
