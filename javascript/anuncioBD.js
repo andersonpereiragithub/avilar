@@ -9,6 +9,7 @@ class Anuncio{
         this.tipo = tipo;
         this.descricao = descricao;
     }
+
     /**
      * @param {any} id
      */
