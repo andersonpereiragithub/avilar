@@ -69,10 +69,10 @@ caption{
 footer{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    background-image: linear-gradient(to right, var(--cor4), var(--cor2));
+    background-image: linear-gradient(to top, var(--cor4), var(--cor2));
     color: white;
-    text-align: center;
-    margin: 50px;
-    padding: 3px;
+    padding: 5px;
     border-radius: 10px;
+    position: fixed;
+    bottom: 0px;
 }

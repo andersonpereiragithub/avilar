@@ -24,30 +24,27 @@ th {
 }
 
 /*      TABELA DE IMÓVEIS       */
-table#tab1{
+
+table{
     border-collapse: collapse;
+}
+table#tab1{
     margin: auto;
     position: relative;
     padding-top: 100px;
 }
 table#tab2{
-    border-collapse: collapse;
     margin: auto;
     position: relative;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.664);
     padding-top: 100px;
 }
 
-table > tr > td.end{
-    border: 1px solid;
-}
 
 thead{
-    background-image: linear-gradient(to right, var(--cor4), var(--cor1));
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
     color: white;
     height: 40px;
-    position: sticky;
-    top: 0;
 }
 
 tr.dados:hover{
@@ -65,8 +62,8 @@ tr.dados:nth-child(odd):hover{
 
 tr.dados > td.end{
     text-align: left;
-    width: 400px;
-    height: 20px;
+    width: 487px;
+    height: 40px;
     padding-left: 10px;
 }
 tr > td > abbr > img{
@@ -80,8 +77,4 @@ tr.dados > td.valor{
     text-align: right;
     width: 70px;
     height: 25px;
-}
-
-td {
-    border: 0.5px solid rgba(96, 207, 133, 0.342);
 }

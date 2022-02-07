@@ -24,11 +24,10 @@ class Anuncio{
      * @param {any} endereco
      */
     set setEdereco(endereco){
-        
         this._endereco = endereco;
     }
     get getEndereco(){
-        console.log("O Endereço é: " + endereco);
+        console.log("O Endereço é: " + this._endereco);
         return this._endereco;
     }
 
@@ -36,10 +35,10 @@ class Anuncio{
      * @param {any} aluguel
      */
     set setAlugue(aluguel){
-        this._aluguel = aluguel;
+        this._aluguel = aluguel.replace(".", ",").fixed(2);
     }
     get getAluguel(){
-        return this._aluguel;
+        return this._aluguel.toFixed(2).replace(".", ",");
     }
 
     /**
@@ -49,7 +48,7 @@ class Anuncio{
         this._iptu = iptu;
     }
     get getIptu(){
-        return this._iptu;
+        return this._iptu.toFixed(2).replace(".", ",");
     }
 
     /**
@@ -59,11 +58,15 @@ class Anuncio{
         this._condominio = condominio;
     }
     get getCondominio(){
-        return this._condominio;
+        return this._condominio.toFixed(2).replace(".", ",");
     }
 
+    set setTotal(value){
+        value = this._aluguel + this._iptu + this._condominio;
+        this._total = value;
+    }
     get getTotal(){
-        return this._total;
+        return this._total.toFixed(2).replace(".", ",");
     }
  
     /**
@@ -117,6 +120,7 @@ class Linha {
         this.td4.innerHTML = an02.getCondominio;
         this.td5.setAttribute('class', 'valor');
         this.td5.setAttribute("style", "font-size: 12px;");
+        this.td5.innerHTML = an02.getTotal;
     }
     getLinha(){
         this.abbr.appendChild(this.img);
@@ -146,4 +150,5 @@ function inserirNovo(){
     var lin = newLinha.getLinha();
      
     tabela.appendChild(lin);
+    alert("Anúncio publicado com SUCESSO!");
 }
