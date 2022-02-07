@@ -1,91 +1,91 @@
 class Anuncio{
     constructor(id, endereco, aluguel, iptu, condominio, total, tipo, descricao){
-        this.id = id;
-        this.endereco = endereco;
-        this.aluguel = aluguel;
-        this.iptu = iptu;
-        this.condominio = condominio;
-        this.total = total;
-        this.tipo = tipo;
-        this.descricao = descricao;
+        this._id = id;
+        this._endereco = endereco;
+        this._aluguel = aluguel;
+        this._iptu = iptu;
+        this._condominio = condominio;
+        this._total = total;
+        this._tipo = tipo;
+        this._descricao = descricao;
     }
 
     /**
      * @param {any} id
      */
     set setId(id){
-        this.id = id;
+        this._id = id;
     }
     get getId(){
-        return this.id;
+        return this._id;
     }
 
     /**
      * @param {any} endereco
      */
     set setEdereco(endereco){
-        this.endereco = endereco;
+        this._endereco = endereco;
     }
     get getEndereco(){
-        return this.endereco;
+        return this._endereco;
     }
 
     /**
      * @param {any} aluguel
      */
     set setAlugue(aluguel){
-        this.aluguel = aluguel;
+        this._aluguel = aluguel;
     }
     get getAluguel(){
-        return this.aluguel;
+        return this._aluguel;
     }
 
     /**
      * @param {any} iptu
      */
     set setIptu(iptu){
-        this.iptu = iptu;
+        this._iptu = iptu;
     }
     get getIptu(){
-        return this.iptu;
+        return this._iptu;
     }
 
     /**
      * @param {any} condominio
      */
     set setCondominio(condominio){
-        this.condominio = condominio;
+        this._condominio = condominio;
     }
     get getCondominio(){
-        return this.condominio;
+        return this._condominio;
     }
 
     get getTotal(){
-        return this.total;
+        return this._total;
     }
  
     /**
      * @param {any} tipo
      */
     set setTipo(tipo){
-        this.tipo = tipo;
+        this._tipo = tipo;
     }
     get getTipo(){
-        return this.tipo;
+        return this._tipo;
     }
 
     /**
      * @param {any} descricao
      */
     set setDescricao(descricao){
-        this.descricao = descricao;
+        this._descricao = descricao;
     }
     get getDescricao(){
-        return this.descricao;
+        return this._descricao;
     }
 }
 
-var an02 = new Anuncio("apto02", "Rua Chanceler Oswaldo Aranha, nº 180/402", 1.100,00, 155,56, 500,00, 1.750,00, "apartamento", "03 quartos, garagem, com elevador - área 90m2");
+var an02 = new Anuncio("apto02", "Rua Chanceler Oswaldo Aranha, nº 180/402", 1100.00, 155.56, 500.00, 1750.00, "apartamento", "03 quartos, garagem, com elevador - área 90m2");
 
 
 let tabela = document.getElementById('tabela_1');

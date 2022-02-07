@@ -1,89 +1,89 @@
 class Anuncio{
     constructor(id, endereco, aluguel, iptu, condominio, total, tipo, descricao){
-        this.id = id;
-        this.endereco = endereco;
-        this.aluguel = aluguel;
-        this.iptu = iptu;
-        this.condominio = condominio;
-        this.total = total;
-        this.tipo = tipo;
-        this.descricao = descricao;
+        this._id = id;
+        this._endereco = endereco;
+        this._aluguel = aluguel;
+        this._iptu = iptu;
+        this._condominio = condominio;
+        this._total = total;
+        this._tipo = tipo;
+        this._descricao = descricao;
     }
 
     /**
      * @param {any} id
      */
     set setId(id){
-        this.id = id;
+        this._id = id;
     }
     get getId(){
-        return this.id;
+        return this._id;
     }
 
     set setEdereco(endereco){
-        this.endereco = endereco;
+        this._endereco = endereco;
     }
     get getEndereco(){
-        return this.endereco;
+        return this._endereco;
     }
 
     set setAlugue(aluguel){
-        this.aluguel = aluguel;
+        this._aluguel = aluguel;
     }
     get getAluguel(){
-        return this.aluguel;
+        return this._aluguel;
     }
 
     set setIptu(iptu){
-        this.iptu = iptu;
+        this._iptu = iptu;
     }
     get getIptu(){
-        return this.iptu;
+        return this._iptu;
     }
 
-    set setCondominio(condominio){
-        this.condominio = condominio;
+    set setCondominio(value){
+        this._condominio = value;
     }
     get getCondominio(){
-        return this.condominio;
+        return this._condominio;
     }
 
     set setTotal(){
-        this.total = this.getAluguel + this.getIptu + this.getCondominio;
+        this._total = this.getAluguel + this.getIptu + this.getCondominio;
     }
     get getTotal(){
-        return this.total;
+        return this._total;
     }
  
     set setTipo(tipo){
-        this.tipo = tipo;
+        this._tipo = tipo;
     }
     get getTipo(){
-        return this.tipo;
+        return this._tipo;
     }
 
     set setDescricao(descricao){
-        this.descricao = descricao;
+        this._descricao = descricao;
     }
     get getDescricao(){
-        return this.descricao;
+        return this._descricao;
     }
 }
-var an01 = new Anuncio("apto01", "Rua Santo Antônio, nº 266/705",	700,00,	114,00,	310,00,	1.124,00, "apartamento", "Quarto e sala com armários - área 44m2");
+var an01 = new Anuncio("apto01", "Rua Santo Antônio, nº 266/705", 700,00, 114,00, 310,00, 1.124,00, "apartamento", "Quarto e sala com armários - área 44m2");
 var an02 = new Anuncio("apto02", "Rua Chanceler Oswaldo Aranha, nº 180/402", 1.100,00, 155,56, 500,00, 1.750,00, "apartamento", "03 quartos, garagem, com elevador - área 90m2");
 var an03 = new Anuncio("apto03", "Rua Gil Horta, 90",	1.200,00,	247,52,	220,00, 1.670,00, "apartamento", "03 quartos, garagem, sem elevador - área 112m2");
-var an04 = new Anuncio("apto04", "Rua Luz Interior, 0",	5.000,00, 550,00,	0,00,	5.550,00, "terreno", "Terreno 644m2");
-var an05 = new Anuncio("apto05", "Rua Vila Vidal, 107 apto 04",	700,00,	0,00,	"Divisão",	750,00, "apartamento", "02 quartos pequenos, área fundos");
-var an06 = new Anuncio("apto06", "Rua Vila Vidal, 107 apto 05",	700,00,	0,00,	"Divisão",	750,00, "apartamento", "02 quartos pequenos, área fundos");
-var an07 = new Anuncio("apto07", "Rua Adelina Maria da Costa, 197 Apto 201",	1.000,00,	72,07,	"Divisão",	1.072,00, "apartamento", "02 quartos, garagem e suíte - área 89m2");
-var an08 = new Anuncio("apto08", "Rua Adelina Maria da Costa, 197 Apto 301",	1.000,00,	76,08,	"Divisão",	1.076,00, "apartamento", "02 quartos, garagem e suíte - área 88m2");
-var an09 = new Anuncio("apto09", "Rua Adelina Maria da Costa, 197 Apto 401",	1.100,00,	134,80,	"Divisão",	1.235,00, "apartamento", "03 quartos, garagem e Suíte - área 145m2");
+var an04 = new Anuncio("apto04", "Rua Luz Interior, 0",	5.000,00, 550,00, 0,00,	5.550,00, "terreno", "Terreno 644m2");
+var an05 = new Anuncio("apto05", "Rua Vila Vidal, 107 apto 04",	700,00,	0,00, "Divisão",	750,00, "apartamento", "02 quartos pequenos, área fundos");
+var an06 = new Anuncio("apto06", "Rua Vila Vidal, 107 apto 05",	700,00,	0,00, "Divisão",	750,00, "apartamento", "02 quartos pequenos, área fundos");
+var an07 = new Anuncio("apto07", "Rua Adelina Maria da Costa, 197 Apto 201", 1.000,00,	72,07,	"Divisão",	1.072,00, "apartamento", "02 quartos, garagem e suíte - área 89m2");
+var an08 = new Anuncio("apto08", "Rua Adelina Maria da Costa, 197 Apto 301", 1.000,00,	76,08,	"Divisão",	1.076,00, "apartamento", "02 quartos, garagem e suíte - área 88m2");
+var an09 = new Anuncio("apto09", "Rua Adelina Maria da Costa, 197 Apto 401", 1.100,00,	134,80,	"Divisão",	1.235,00, "apartamento", "03 quartos, garagem e Suíte - área 145m2");
 var an10 = new Anuncio("apto10", "Rua Carlos Herculano Couto, nº 150 Apto 303", 700,00,	34,77,	218,00,	955,00, "apartamento", "02 quartos, área, garagem descoberta - área 52m2");
 
-var an11 = new Anuncio("casa01", "Av. Dos Andras, nº 43 Sobrado",	5.000,00, 535,46, "Divisão", 5.540,00, "casa comercial", "01 salão, 02 banheiros, cozinha, 02 quartinhos - 200m2");
+var an11 = new Anuncio("casa01", "Av. Dos Andras, nº 43 Sobrado", 5.000,00, 535,46, "Divisão", 5.540,00, "casa comercial", "01 salão, 02 banheiros, cozinha, 02 quartinhos - 200m2");
 var an12 = new Anuncio("casa02", "Rua Dom Silvério, nº 59 Sobrado", 2.500,00, 241,92, "---------", 2.742,00, "casa comercial", "01 salão, 01 escritório, 01 banheiro e cozinha - área 80m2");
 var an13 = new Anuncio("casa03", "Rua Barão de São Marcelino, nº 385 Sobrado", 3.800,00, 378,52, "---------",	4.180,00, "casa comercial", "03 salas, 05 quartos, 03 banheiros - área 162m2");
-var an14 = new Anuncio("casa04", "Rua Uruguaiana, nº 94 Sobrado",	5.000,00, 255,98, "---------", 5.256,00, "casa comercial","07 quartos, 01 sala, 01 copa, 03 banheiros, vagas para 04 carros - área 159m2");
+var an14 = new Anuncio("casa04", "Rua Uruguaiana, nº 94 Sobrado", 5.000,00, 255,98, "---------", 5.256,00, "casa comercial","07 quartos, 01 sala, 01 copa, 03 banheiros, vagas para 04 carros - área 159m2");
 
 var an15 = new Anuncio("loja01", "Av. Presidente Costa e Silva, nº 1834", 3.700,00,	147,33,	0,00, "loja", "Loja com sobreloja, banheiro e área externa nos fundos - área 90m2");	
 var an16 = new Anuncio("loja02", "Av. Br. do Rio Branco, 1829", 4.400,00, 238,63, 106,00, 4.750,00, "loja", "Loja SEM mezanino - área 47m2");
