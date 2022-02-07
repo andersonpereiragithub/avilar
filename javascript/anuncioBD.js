@@ -69,11 +69,10 @@ class Anuncio{
         return this.descricao;
     }
 }
-
-var an02 = new Anuncio("apto02", "Rua Chanceler Oswaldo Aranha, nº 180/402",	1.100,00, 155,56, 500,00, 1.750,00, "apartamento", "03 quartos, garagem, com elevador - área 90m2");
+var an01 = new Anuncio("apto01", "Rua Santo Antônio, nº 266/705",	700,00,	114,00,	310,00,	1.124,00, "apartamento", "Quarto e sala com armários - área 44m2");
+var an02 = new Anuncio("apto02", "Rua Chanceler Oswaldo Aranha, nº 180/402", 1.100,00, 155,56, 500,00, 1.750,00, "apartamento", "03 quartos, garagem, com elevador - área 90m2");
 var an03 = new Anuncio("apto03", "Rua Gil Horta, 90",	1.200,00,	247,52,	220,00, 1.670,00, "apartamento", "03 quartos, garagem, sem elevador - área 112m2");
 var an04 = new Anuncio("apto04", "Rua Luz Interior, 0",	5.000,00, 550,00,	0,00,	5.550,00, "terreno", "Terreno 644m2");
-var an01 = new Anuncio("apto01", "Rua Santo Antônio, nº 266/705",	700,00,	114,00,	310,00,	1.124,00, "apartamento", "Quarto e sala com armários - área 44m2");
 var an05 = new Anuncio("apto05", "Rua Vila Vidal, 107 apto 04",	700,00,	0,00,	"Divisão",	750,00, "apartamento", "02 quartos pequenos, área fundos");
 var an06 = new Anuncio("apto06", "Rua Vila Vidal, 107 apto 05",	700,00,	0,00,	"Divisão",	750,00, "apartamento", "02 quartos pequenos, área fundos");
 var an07 = new Anuncio("apto07", "Rua Adelina Maria da Costa, 197 Apto 201",	1.000,00,	72,07,	"Divisão",	1.072,00, "apartamento", "02 quartos, garagem e suíte - área 89m2");
