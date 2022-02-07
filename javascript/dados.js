@@ -24,9 +24,11 @@ class Anuncio{
      * @param {any} endereco
      */
     set setEdereco(endereco){
+        
         this._endereco = endereco;
     }
     get getEndereco(){
+        console.log("O Endereço é: " + endereco);
         return this._endereco;
     }
 
@@ -85,9 +87,6 @@ class Anuncio{
     }
 }
 
-var an02 = new Anuncio("apto02", "Rua Chanceler Oswaldo Aranha, nº 180/402", 1100.00, 155.56, 500.00, 1750.00, "apartamento", "03 quartos, garagem, com elevador - área 90m2");
-
-
 let tabela = document.getElementById('tabela_1');
 
 class Linha {
@@ -109,14 +108,13 @@ class Linha {
         this.abbr.setAttribute('style', 'text-decoation: nome; cursor: copy;');
         this.td0.setAttribute('class', 'info');
         this.td1.setAttribute('class', 'end');
-        this.td1.innerHTML = an02.endereco;
-        console.log(an02.endereco);
+        this.td1.innerHTML = an02.getEndereco;
         this.td2.setAttribute('class', 'valor');
-        this.td2.innerHTML = an02.aluguel;
+        this.td2.innerHTML = an02.getAluguel;
         this.td3.setAttribute('class', 'valor');
-        this.td3.innerHTML = an02.iptu;
+        this.td3.innerHTML = an02.getIptu;
         this.td4.setAttribute('class', 'valor');
-        this.td4.innerHTML = an02.condominio;
+        this.td4.innerHTML = an02.getCondominio;
         this.td5.setAttribute('class', 'valor');
         this.td5.setAttribute("style", "font-size: 12px;");
     }
@@ -142,12 +140,10 @@ function inserirNovo(){
     var condominio = document.getElementById("numCond").value;
     var total = parseFloat(aluguel) + parseFloat(iptu) + parseFloat(condominio);
 */ 
-    var newLinha = new Linha();
     var an02 = new Anuncio("apto02", "Rua Chanceler Oswaldo Aranha, nº 180/402", 1100.00, 155.56, 500.00, 1750.00, "apartamento", "03 quartos, garagem, com elevador - área 90m2");
+    var newLinha = new Linha();
     newLinha.setLinha(an02);
     var lin = newLinha.getLinha();
-    console.log('Funcionou!')
-   
-    console.log(lin);
+     
     tabela.appendChild(lin);
 }
