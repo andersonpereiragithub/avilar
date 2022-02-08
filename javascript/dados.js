@@ -1,4 +1,4 @@
-
+let trApto = document.getElementById('apto');
 let trCasa = document.getElementById('casaC');
 let trLoja = document.getElementById('loja');
 let trSala = document.getElementById('sala');
@@ -6,45 +6,40 @@ let trGal = document.getElementById('galpoes');
 
 class Linha {
     constructor(){
-        this.tr = document.createElement('tr');
-        this.img = document.createElement('img');
-        this.abbr = document.createElement('abbr');
-        this.td0 = document.createElement('td');
-        this.td1 = document.createElement('td');
-        this.td2 = document.createElement('td');
-        this.td3 = document.createElement('td');
-        this.td4 = document.createElement('td');
-        this.td5 = document.createElement('td');
+        this.row_anun = document.createElement('tr');
+        
+        this.col_id = document.createElement('td');
+        this.col_end = document.createElement('td');
+        this.col_aluguel = document.createElement('td');
+        this.col_iptu = document.createElement('td');
+        this.col_cond = document.createElement('td');
+        this.col_total = document.createElement('td');
     }
     setLinha(an02){
-        this.tr.setAttribute('class', 'dados');
-        this.img.setAttribute('src', 'imagens/info2.png');
-        this.img.setAttribute('alt', 'informacao');
-        this.abbr.setAttribute('style', 'text-decoation: nome; cursor: copy;');
-        this.td0.setAttribute('class', 'info');
-        this.td1.setAttribute('class', 'end');
-        this.td1.innerHTML = an02.getEndereco;
-        this.td2.setAttribute('class', 'valor');
-        this.td2.innerHTML = an02.getAluguel.toFixed(2).replace(".", ",");
-        this.td3.setAttribute('class', 'valor');
-        this.td3.innerHTML = an02.getIptu.toFixed(2).replace(".", ",");
-        this.td4.setAttribute('class', 'valor');
-        this.td4.innerHTML = an02.getCondominio.toFixed(2).replace(".", ",");
-        this.td5.setAttribute('class', 'valor');
-        this.td5.setAttribute("style", "font-size: 12px;");
-        this.td5.innerHTML = an02.getTotal;
+        this.row_anun.setAttribute('class', 'dados');
+        
+        this.col_id.setAttribute('id', `${an02.getId}`);
+        this.col_end.setAttribute('class', 'end');
+        this.col_end.innerHTML = an02.getEndereco;
+        this.col_aluguel.setAttribute('class', 'valor');
+        this.col_aluguel.innerHTML = an02.getAluguel.toFixed(2).replace(".", ",");
+        this.col_iptu.setAttribute('class', 'valor');
+        this.col_iptu.innerHTML = an02.getIptu.toFixed(2).replace(".", ",");
+        this.col_cond.setAttribute('class', 'valor');
+        this.col_cond.innerHTML = an02.getCondominio.toFixed(2).replace(".", ",");
+        this.col_total.setAttribute('class', 'valor');
+        this.col_total.setAttribute("style", "font-size: 12px;");
+        this.col_total.innerHTML = an02.getTotal;
     }
     getLinha(){
-        this.abbr.appendChild(this.img);
-        this.td0.appendChild(this.abbr);
-        this.tr.appendChild(this.td0);
-        this.tr.appendChild(this.td1);
-        this.tr.appendChild(this.td2);
-        this.tr.appendChild(this.td3);
-        this.tr.appendChild(this.td4);
-        this.tr.appendChild(this.td5);
+        this.row_anun.appendChild(this.col_id);
+        this.row_anun.appendChild(this.col_end);
+        this.row_anun.appendChild(this.col_aluguel);
+        this.row_anun.appendChild(this.col_iptu);
+        this.row_anun.appendChild(this.col_cond);
+        this.row_anun.appendChild(this.col_total);
 
-        return this.tr;
+        return this.row_anun;
     }
 }
 
@@ -56,9 +51,10 @@ function inserirNovo(){
     const arrayAnuncio = [];
 
  for(var i = 0; i < anuncios.length; i++){
-     console.log(anuncios[i])
-     newLinha.setLinha(anuncios[i]);
-     
+     if(anuncios[i]._id.includes('apto')){
+         newLinha = trApto.insertRow(anuncios[i]);
+     }
+          
      var lin = newLinha.getLinha();
      
      arrayAnuncio.push(lin);
@@ -73,9 +69,7 @@ function inserirNovo(){
      }else{
          trSala.appendChild(arrayAnuncio[i]);
      }
-    
  }
-    
     alert("Anúncio publicado com SUCESSO!");
 }
 
