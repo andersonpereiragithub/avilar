@@ -1,3 +1,5 @@
+/* CADASTRO PARA INSERIR DADOS PELO FORMULÁRIO  */
+
 class Anuncio{
     constructor(){
         this._id = 1;
@@ -9,7 +11,7 @@ class Anuncio{
         this.arrayAnuncios = [];
     }
 
-    lerDados(){
+    lerDadosXXX(){
         let anuncio = {}
 
         anuncio._id = this._id;
