@@ -50,7 +50,7 @@ thead{
 
 tr.dados:hover{
     background-color: var(--cor1);
-    color: white;
+    color: var(--cor4);
 }
 
 tr.titulo:nth-child(odd){
@@ -59,6 +59,7 @@ tr.titulo:nth-child(odd){
 
 tr.dados:nth-child(odd):hover{
     background-color: var(--cor1);
+    color: var(--cor4);
 }
 
 tr.dados > td.end{
@@ -74,6 +75,13 @@ tr > td > abbr > img{
     padding-left: 18px;
 }
 tr.dados > td.valor{
+    padding-right: 4px;
+    text-align: right;
+    width: 70px;
+    height: 25px;
+}
+tr.dados > td.tot{
+    font-size: 10px;
     padding-right: 4px;
     text-align: right;
     width: 70px;

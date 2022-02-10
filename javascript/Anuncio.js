@@ -7,6 +7,7 @@ class Anuncio{
         this._condominio = condominio;
         this._tipo = tipo;
         this._descricao = descricao;
+        this._Total = 0.00;
     }
 
     /**
@@ -60,6 +61,7 @@ class Anuncio{
     get getDescricao(){
         return this._descricao;
     }
+
 }
 
     var an01 = new Anuncio('apto01', 'Rua Santo Antônio, nº 266/705', 700.00, 114.00, 310.00, 'apartamento', 'Quarto e sala com armários - área 44m2');
@@ -102,16 +104,20 @@ class Anuncio{
             let td_aluguel = tr.insertCell();
             let td_iptu = tr.insertCell();
             let td_cond = tr.insertCell();
+            let td_total = tr.insertCell();
             
             td_end.innerText = arrayAnuncio[i].getEndereco;
             td_aluguel.innerText = arrayAnuncio[i]._aluguel.toFixed(2).replace('.', ',');
             td_iptu.innerText = arrayAnuncio[i]._iptu.toFixed(2).replace('.', ',');
             td_cond.innerText = arrayAnuncio[i]._condominio.toFixed(2).replace('.', ',');
+            let somaTotal = arrayAnuncio[i]._aluguel + arrayAnuncio[i]._iptu + arrayAnuncio[i]._condominio;
+            td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
 
             tr.setAttribute('class', 'dados');
             td_end.setAttribute('class', 'end');
             td_aluguel.setAttribute('class', 'valor');
             td_iptu.setAttribute('class', 'valor');
             td_cond.setAttribute('class', 'valor');
-            }
+            td_total.setAttribute('class', 'tot');
         }
+    }
