@@ -11,18 +11,18 @@
     <script src="javascript/dados.js" type="module"></script>
  
     <script src="javascript/cadastro.js" type="module"></script>
-    <script src="javascript/Anuncio.js" type="module"></script>
+    <script src="javascript/Anuncio.js" type="text/javascript"></script>
 
     <title>Imóveis</title>
 </head>
-<body>
+<body onload="criaLista()">
     <header>
         <h1 id="principal">LISTAGEM DE IMÓVEIS</h1>
         <p>
             <caption>Imóveis disponíveis para Locação.</caption>
         </h2>
       </header>
-
+      
     <!-- TABELA DE IMOVEIS -->
     <nav class="nav_pastas">
         <ul>
@@ -34,12 +34,10 @@
                         <table id="tab1" >
                             <thead class="descricao">
                                 <tr class="titulo">
-                                    <th id="i" class="valor" scope="col">Info</th>
                                     <th class="valor" scope="col">Endereço</th>
                                     <th class="valor" scope="col">Aluguel</th>
                                     <th class="valor" scope="col">IPTU</th>
                                     <th class="valor" scope="col">Condomínio</th>
-                                    <th class="valor" scope="col">Total</th>
                                 </tr>
                             </thead>
                             <tbody id="tbody"></tbody>
@@ -54,33 +52,33 @@
                         <div id="title">
                                              <h3>Cadastrar de imóvel</h3>
                         </div>
-                            <form action="">
-                                <div class="tipo">
-                                    <select name="tipoimovel" id="id_tipo">
-                                        <option value="Tipo de Imóvel" disabled="disabled"  selected="selected">Tipo de Imóvel</option>
-                                        <option value="Apartamento">Apartamento</option>
-                                        <option value="Casa">Casa Comercial</option>
-                                        <option value="Loja">Loja</option>
-                                        <option value="Sala">Sala</option>
-                                        <option value="Galpao">Galpão</option>
-                                    </select>
-                                </div>
-                                    <div class="end">
-                                        <input type="text" name="endereco" id="id_end" placeholder="Endereço...">
-                                        <input type="text" name="numero" id="num" placeholder="Nº...">
-                                    </div>
-                                    <div>
-                                        <input type="text" name="numAluguel" id="id_aluguel" placeholder="R$ Aluguel...">
-                                    </div>
-                                    <div>
-                                        <input type="text" name="numIptu" id="id_iptu" placeholder="R$ IPTU...">
-                                    </div>
-                                    <div>
-                                        <input type="text" name="numCond" id="id_cond" placeholder="R$ Condomínio...">
-                                    </div>
-                                    <div>
-                                        <input type="button" value="Inserir" id="btnInserir" onclick="lerDados()">
-                                    </div>
+                        <form action="">
+                            <div class="tipo">
+                                <select name="tipoimovel" id="id_tipo">
+                                    <option value="Tipo de Imóvel" disabled="disabled"  selected="selected">Tipo de Imóvel</option>
+                                    <option value="Apartamento">Apartamento</option>
+                                    <option value="Casa">Casa Comercial</option>
+                                    <option value="Loja">Loja</option>
+                                    <option value="Sala">Sala</option>
+                                    <option value="Galpao">Galpão</option>
+                                </select>
+                            </div>
+                            <div class="end">
+                                <input type="text" name="endereco" id="id_end" placeholder="Endereço...">
+                                <input type="text" name="numero" id="num" placeholder="Nº...">
+                            </div>
+                            <div>
+                                <input type="text" name="numAluguel" id="id_aluguel" placeholder="R$ Aluguel...">
+                            </div>
+                            <div>
+                                <input type="text" name="numIptu" id="id_iptu" placeholder="R$ IPTU...">
+                            </div>
+                            <div>
+                                <input type="text" name="numCond" id="id_cond" placeholder="R$ Condomínio...">
+                            </div>
+                            <div>
+                                <input type="button" value="Inserir" id="btnInserir" onclick="lerDados()">
+                            </div>
                         </form>
                     </div>
                 </li>

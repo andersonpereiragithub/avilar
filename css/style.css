@@ -51,7 +51,7 @@ header > p{
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color: rgba(187, 183, 183, 0.274);
 }
 
 h1{
@@ -73,6 +73,5 @@ footer{
     color: white;
     padding: 5px;
     border-radius: 10px;
-    position: fixed;
     bottom: 0px;
 }

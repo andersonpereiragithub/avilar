@@ -90,5 +90,7 @@ class Anuncio{
     cancelar(){
         alert("Deletou!")
     }
+
+
 }
     var anuncio = new Anuncio();

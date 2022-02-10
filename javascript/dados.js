@@ -1,4 +1,4 @@
-import Anuncio from "./Anuncio.js";
+//import Anuncio from "./Anuncio.js";
 
     var an01 = new Anuncio('apto01', 'Rua Santo Antônio, nº 266/705', 700.00, 114.00, 31000, 'apartamento', 'Quarto e sala com armários - área 44m2');
     var an02 = new Anuncio("apto02", "Rua Chanceler Oswaldo Aranha, nº 180/402", 1100.00, 155.56, 500.00, "apartamento", "03 quartos, garagem, com elevador - área 90m2");
@@ -33,3 +33,5 @@ import Anuncio from "./Anuncio.js";
                         an20, an21, an22, an23, an24, an25];
 
     export default arrayAnuncio;
+
+ 

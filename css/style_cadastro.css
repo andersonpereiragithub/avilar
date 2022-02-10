@@ -3,7 +3,7 @@
 #title{
     width: 713px;
     height: 40px;
-    background-image: linear-gradient(to right, var(--cor4), var(--cor1));
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
 }
 div#title > h3{
     color: white;

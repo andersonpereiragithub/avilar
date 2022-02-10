@@ -27,6 +27,7 @@ th {
 
 table{
     border-collapse: collapse;
+    background-color: white;
 }
 table#tab1{
     margin: auto;
