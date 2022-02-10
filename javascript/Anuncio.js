@@ -105,13 +105,15 @@ class Anuncio{
             let td_iptu = tr.insertCell();
             let td_cond = tr.insertCell();
             let td_total = tr.insertCell();
-            
+            let tr_desc = tbody.insertRow();
+
             td_end.innerText = arrayAnuncio[i].getEndereco;
             td_aluguel.innerText = arrayAnuncio[i]._aluguel.toFixed(2).replace('.', ',');
             td_iptu.innerText = arrayAnuncio[i]._iptu.toFixed(2).replace('.', ',');
             td_cond.innerText = arrayAnuncio[i]._condominio.toFixed(2).replace('.', ',');
             let somaTotal = arrayAnuncio[i]._aluguel + arrayAnuncio[i]._iptu + arrayAnuncio[i]._condominio;
             td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
+            tr_desc.innerText = arrayAnuncio[i]._descricao;
 
             tr.setAttribute('class', 'dados');
             td_end.setAttribute('class', 'end');
@@ -119,5 +121,13 @@ class Anuncio{
             td_iptu.setAttribute('class', 'valor');
             td_cond.setAttribute('class', 'valor');
             td_total.setAttribute('class', 'tot');
+            tr_desc.setAttribute('onclick', 'mostraDescricao()');
+            tr_desc.setAttribute('id', 'id_desc');
         }
+    }
+
+    function mostraDescricao(){
+        console.log('está chamando...')
+            //let mostrar = document.querySelector('id_desc').style;
+        //mostrar.setAttribute('style', 'display: ""');
     }

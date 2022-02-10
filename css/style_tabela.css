@@ -87,3 +87,8 @@ tr.dados > td.tot{
     width: 70px;
     height: 25px;
 }
+
+tr#id_desc{
+    visibility: hidden;
+    background: lightgreen;
+  }
