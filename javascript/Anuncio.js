@@ -61,7 +61,7 @@ class Anuncio{
     get getDescricao(){
         return this._descricao;
     }
-
+    
 }
 
     var an01 = new Anuncio('apto01', 'Rua Santo Antônio, nº 266/705', 700.00, 114.00, 310.00, 'apartamento', 'Quarto e sala com armários - área 44m2');
@@ -92,7 +92,7 @@ class Anuncio{
     var an24 = new Anuncio("loja10", "Mister Shoppig, 70 Loja 116", 20000.00, 458.63, 2500.000, "loja", "Loja com sobreloja, banheiro - área 91m2");
     var an25 = new Anuncio("loja11", "Rua José Lourenço, 1384 Loja 02", 1000.00, 123.73, 0.00, "loja", "Loja SEM sobreloja, 02 banheiros - área 49m2");
    
-    const arrayAnuncio = [an01, an02, an03, an04, an01, an05, an06, an07, an08, an09, 
+    const arrayAnuncio = [an01, an02, an03, an04, an05, an06, an07, an08, an09, 
                         an10, an11, an12, an13, an14, an15, an16, an17, an18, an19, 
                         an20, an21, an22, an23, an24, an25];
 
@@ -106,7 +106,8 @@ class Anuncio{
             let td_cond = tr.insertCell();
             let td_total = tr.insertCell();
             let tr_desc = tbody.insertRow();
-
+            
+            
             td_end.innerText = arrayAnuncio[i].getEndereco;
             td_aluguel.innerText = arrayAnuncio[i]._aluguel.toFixed(2).replace('.', ',');
             td_iptu.innerText = arrayAnuncio[i]._iptu.toFixed(2).replace('.', ',');
@@ -115,19 +116,27 @@ class Anuncio{
             td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
             tr_desc.innerText = arrayAnuncio[i]._descricao;
 
+            tr.setAttribute('id', `${arrayAnuncio[i]._id}`);
             tr.setAttribute('class', 'dados');
             td_end.setAttribute('class', 'end');
             td_aluguel.setAttribute('class', 'valor');
             td_iptu.setAttribute('class', 'valor');
             td_cond.setAttribute('class', 'valor');
             td_total.setAttribute('class', 'tot');
-            tr_desc.setAttribute('onclick', 'mostraDescricao()');
-            tr_desc.setAttribute('id', 'id_desc');
+            tr.setAttribute('onmouseover', 'showDesc(this.id)');
+            tr.setAttribute('onmouseout', 'hiddenDesc(this.id)');
+            tr_desc.setAttribute('id', `${arrayAnuncio[i]._id}` + '_sub');
+            tr_desc.setAttribute('style', 'visibility: hidden');
         }
     }
+    function showDesc(id){
+        let showDescricao = document.getElementById(id + '_sub');
+        showDescricao.style.visibility = "visible";
+        showDescricao.style.backgroundColor = "lingth";
+        showDescricao.style.fontSize = "12px";
 
-    function mostraDescricao(){
-        console.log('está chamando...')
-            //let mostrar = document.querySelector('id_desc').style;
-        //mostrar.setAttribute('style', 'display: ""');
+    }
+    function hiddenDesc(id){
+        let showDescricao = document.getElementById(id + '_sub');
+        showDescricao.style.visibility = "hidden";
     }
