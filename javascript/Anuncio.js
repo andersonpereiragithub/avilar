@@ -132,11 +132,15 @@ class Anuncio{
     function showDesc(id){
         let showDescricao = document.getElementById(id + '_sub');
         showDescricao.style.visibility = "visible";
-        showDescricao.style.backgroundColor = "lingth";
+        showDescricao.style.color = "#1a5c37";
         showDescricao.style.fontSize = "12px";
-
+        showDescricao.style.width = "1000px";
+        showDescricao.style.height = "20px";
+        showDescricao.style.textAlign = "center";
     }
+    
     function hiddenDesc(id){
         let showDescricao = document.getElementById(id + '_sub');
         showDescricao.style.visibility = "hidden";
+        showDescricao.style.height = "0px";
     }
