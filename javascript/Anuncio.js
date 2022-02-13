@@ -107,7 +107,6 @@ class Anuncio{
             let td_total = tr.insertCell();
             let tr_desc = tbody.insertRow();
             
-            
             td_end.innerText = arrayAnuncio[i].getEndereco;
             td_aluguel.innerText = arrayAnuncio[i]._aluguel.toFixed(2).replace('.', ',');
             td_iptu.innerText = arrayAnuncio[i]._iptu.toFixed(2).replace('.', ',');
@@ -115,7 +114,7 @@ class Anuncio{
             let somaTotal = arrayAnuncio[i]._aluguel + arrayAnuncio[i]._iptu + arrayAnuncio[i]._condominio;
             td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
             tr_desc.innerText = arrayAnuncio[i]._descricao;
-
+            
             tr.setAttribute('id', `${arrayAnuncio[i]._id}`);
             tr.setAttribute('class', 'dados');
             td_end.setAttribute('class', 'end');
@@ -126,21 +125,21 @@ class Anuncio{
             tr.setAttribute('onmouseover', 'showDesc(this.id)');
             tr.setAttribute('onmouseout', 'hiddenDesc(this.id)');
             tr_desc.setAttribute('id', `${arrayAnuncio[i]._id}` + '_sub');
-            tr_desc.setAttribute('style', 'visibility: hidden');
+            tr_desc.setAttribute('classe', 'dados');
+            tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
         }
     }
     function showDesc(id){
-        let showDescricao = document.getElementById(id + '_sub');
-        showDescricao.style.visibility = "visible";
-        showDescricao.style.color = "#1a5c37";
-        showDescricao.style.fontSize = "12px";
-        showDescricao.style.width = "1000px";
-        showDescricao.style.height = "20px";
-        showDescricao.style.textAlign = "center";
+        let showDesc = document.getElementById(id + '_sub');
+        showDesc.style.opacity = "1";
+        showDesc.style.color = "#1a5c37";
+        showDesc.style.fontSize = "12px";
+        showDesc.style.width = "800px";
+        showDesc.style.height = "20px";
+        showDesc.style.textAlign = "center";
     }
     
     function hiddenDesc(id){
-        let showDescricao = document.getElementById(id + '_sub');
-        showDescricao.style.visibility = "hidden";
-        showDescricao.style.height = "0px";
+        let showDesc = document.getElementById(id + '_sub');
+        showDesc.style.opacity = "0";
     }

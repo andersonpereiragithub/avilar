@@ -14,9 +14,6 @@
     --fonte-destaque: 'Bebas Neue', cursive;
 }
 
-th#i{
-    width: 40px;
-}
 th {
     margin-left: 3px;
     margin-right: 3px;
@@ -57,33 +54,21 @@ tr.titulo:nth-child(odd){
     background-color: rgba(60, 66, 60, 0.13);
 }
 
-tr.dados:nth-child(odd):hover{
-    background-color: var(--cor1);
-    color: var(--cor4);
-}
-
 tr.dados > td.end{
     text-align: left;
     width: 487px;
-    height: 40px;
+    height: 30px;
     padding-left: 10px;
 }
-tr > td > abbr > img{
-    width: 16px;
-    height: 16px;
-    padding-right: 18px;
-    padding-left: 18px;
-}
+
 tr.dados > td.valor{
     padding-right: 4px;
     text-align: right;
     width: 70px;
-    height: 25px;
 }
 tr.dados > td.tot{
     font-size: 10px;
     padding-right: 4px;
     text-align: right;
     width: 70px;
-    height: 25px;
 }
