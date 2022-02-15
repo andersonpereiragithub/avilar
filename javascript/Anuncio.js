@@ -98,6 +98,7 @@ class Anuncio{
 
     function criaLista(){
         let tbody = document.getElementById( 'tbody');
+        
         for(let i = 0; i < arrayAnuncio.length; i++){
             let tr = tbody.insertRow();
             let td_end = tr.insertCell() ;
