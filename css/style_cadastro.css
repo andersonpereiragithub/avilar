@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+form{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #83e1ad;
+    border-radius: 0px 0px 10px 10px;
+}
 #title{
     width: 713px;
     height: 40px;
@@ -20,7 +26,7 @@ select{
 input{
     height: 30px;
     border: none;
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
     box-shadow: 1px 1px 3px black;
     border-radius: 5px;
@@ -31,6 +37,7 @@ textarea{
     padding: 5px;
     box-shadow: 1px 1px 3px black;
     border-radius: 5px;
+    margin: 15px;
 }
 input#id_end{
     width: 400px;
@@ -56,21 +63,21 @@ input#numCond{
 select{
     height: 40px;
     border: none;
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
     box-shadow: 1px 1px 3px black;
     border-radius: 5px;
 }
 
-input#btnEnviar{
+button#btnEnviar{
     position: relative;
     left: 250px;
     margin-top: 20px;
-    background-color: #3ddc84;
+    background-color: #2fa866;
     height: 40px;
     width: 200px;
     font-weight: bold;
     font-size: 1.5em;
     color: white;
-    border: none;
+    border-radius: 5px;
 }

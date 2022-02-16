@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/style_tabela.css">
     <link rel="stylesheet" href="css/style_abas.css">
     <link rel="stylesheet" href="css/style_cadastro.css">
-    
+    li
     <script src="javascript/dados.js" type="module"></script>
- 
+    <script src="javascript/cep.js" type="text/javascript"></script>
     <script src="javascript/cadastro.js" type="module"></script>
     <script src="javascript/Anuncio.js" type="text/javascript"></script>
     <script src="javascript/api.js" type="text/javascript"></script>
@@ -55,7 +55,7 @@
                         </div>
                         <form action="">
                             <div>
-                                <input type="text" name="numCep" id="id_cep" placeholder="Busca Endereço pelo CEP">
+                                <input type="text" name="numCep" id="id_cep" onblur="pesquisacep(this.value)" placeholder="Busca Endereço pelo CEP">
                             </div>
                             <div class="end">
                                 <input type="text" name="endereco" id="id_end" placeholder="Endereço...">
@@ -89,7 +89,7 @@
                                 </select>
                             </div>
                             <div>
-                                <input type="button" value="Enviar" id="btnEnviar" onclick="lerDados()">
+                                <button type="submit" value="Enviar" id="btnEnviar">Enviar</button>
                             </div>
                         </form>
                     </div>
