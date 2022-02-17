@@ -43,10 +43,12 @@ textarea{
 input#id_end{
     width: 400px;
 }
-
+#txtarea{
+    width: 400px;
+    height: 60px;
+}
 input#num{
     width: 70px;
-    
 }
 input#numAluguel{
     width: 100px;
@@ -68,6 +70,9 @@ select{
     padding: 5px;
     box-shadow: 1px 1px 3px black;
     border-radius: 5px;
+}
+fieldset{
+    border: none;
 }
 
 button#btnEnviar{
