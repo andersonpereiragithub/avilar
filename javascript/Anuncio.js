@@ -63,7 +63,7 @@ class Anuncio{
     }
 }
 
-    var an01 = new Anuncio('apto01', 'Rua Santo Antônio, nº 266/705', 700.00, 114.00, 310.00, 'apartamento', 'Quarto e sala com armários - área 44m2');
+    /*var an01 = new Anuncio('apto01', 'Rua Santo Antônio, nº 266/705', 700.00, 114.00, 310.00, 'apartamento', 'Quarto e sala com armários - área 44m2');
     var an02 = new Anuncio("apto02", "Rua Chanceler Oswaldo Aranha, nº 180/402", 1100.00, 155.56, 500.00, "apartamento", "03 quartos, garagem, com elevador - área 90m2");
     var an03 = new Anuncio("apto03", "Rua Gil Horta, 90", 1200.00, 247.52, 220.00, "apartamento", "03 quartos, garagem, sem elevador - área 112m2");
     var an04 = new Anuncio("apto04", "Rua Luz Interior, 0",	5000.00, 550.00, 0.00, "terreno", "Terreno 644m2");
@@ -93,9 +93,9 @@ class Anuncio{
    
     const arrayAnuncio = [an01, an02, an03, an04, an05, an06, an07, an08, an09, 
                         an10, an11, an12, an13, an14, an15, an16, an17, an18, an19, 
-                        an20, an21, an22, an23, an24, an25];
+                        an20, an21, an22, an23, an24, an25];*/
 
-    function criaLista(){
+    /*function criaLista(){
         let tbody = document.getElementById( 'tbody');
         
         for(let i = 0; i < arrayAnuncio.length; i++){
@@ -128,7 +128,7 @@ class Anuncio{
             tr_desc.setAttribute('classe', 'dados');
             tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
         }
-    }
+    }*/
     function showDesc(id){
         let showDesc = document.getElementById(id + '_sub');
         showDesc.style.opacity = "1";
