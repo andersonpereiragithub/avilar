@@ -61,7 +61,6 @@ class Anuncio{
     get getDescricao(){
         return this._descricao;
     }
-    
 }
 
     var an01 = new Anuncio('apto01', 'Rua Santo Antônio, nº 266/705', 700.00, 114.00, 310.00, 'apartamento', 'Quarto e sala com armários - área 44m2');
