@@ -6,7 +6,7 @@ function limpa_formulário_cep() {
 function meu_callback(conteudo) {
 if (!("erro" in conteudo)) {
     //Atualiza os campos com os valores.
-    document.getElementById('id_end').value=(conteudo.logradouro + ',');
+    document.getElementById('id_end').value = (conteudo.logradouro + ',');
     document.getElementById('num').focus();
 } //end if.
 else {

@@ -66,7 +66,6 @@ function listarImoveis() {
             var anuncios = obj;
 
             var tbody = document.getElementById('tbody');
-            //var html = "";
             var i = 0;
 
             for(let i = 0; i < anuncios.length; i++){
@@ -101,52 +100,13 @@ function listarImoveis() {
                 tr_desc.setAttribute('classe', 'dados');
                 tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
             }
-            /*for(let anuncio of anuncios){
-                html += `<tr><td>${obj[i].endereco}</td></tr>`;
-                i++;
-            }*/
-            
-            //tbody.innerHTML = html;
-
-            //for (var i = 0; i < obj.length; i++) {console.log(obj[i].endereco);}
         }
-
     });
 
     xhr.open("GET", "http://localhost:8080/anuncios");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("cache-control", "no-cache");
     xhr.setRequestHeader("postman-token", "a692c64d-ad47-e5f9-f9da-af82f6aa1d8a");
-
-    xhr.send(data);
-}
-
-function testandoApi() {
-    var data = null;
-    
-    var xhr = new XMLHttpRequest();
-    //xhr.withCredentials = true;
-
-    xhr.addEventListener("readystatechange", function () {
-        if (this.readyState === 4) {
-            //console.log(this.responseText);
-
-            const json = this.responseText;
-            const obj = JSON.parse(json);
-
-            for (var i = 0; i < obj.length; i++) {
-                console.log(obj[i].descricao);
-            }
-
-            var input = document.getElementById('input1');
-
-            input.value = obj[6].descricao;
-        }
-    });
-
-    xhr.open("GET", "http://192.168.0.109:8080/cost");
-    xhr.setRequestHeader("cache-control", "no-cache");
-    xhr.setRequestHeader("postman-token", "46602ff6-d18a-89ad-6884-77d809090d72");
 
     xhr.send(data);
 }
