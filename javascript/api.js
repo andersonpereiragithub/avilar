@@ -22,16 +22,16 @@ function salvarImovel() {
     var xhr = new XMLHttpRequest();
     //xhr.withCredentials = true;
 
-    /*xhr.addEventListener("readystatechange", function () {
+    xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
             console.log(this.responseText);
         }
-    });*/
+    });
     
     xhr.open("POST", "http://localhost:8080/anuncios");
     xhr.setRequestHeader("content-type", "application/json");
-    //xhr.setRequestHeader("cache-control", "no-cache");
-    //xhr.setRequestHeader("postman-token", "133ab179-dd4a-6f8e-2b6c-dae7d9802770");
+    xhr.setRequestHeader("cache-control", "no-cache");
+    xhr.setRequestHeader("postman-token", "133ab179-dd4a-6f8e-2b6c-dae7d9802770");
     
     xhr.send(data);
 }
@@ -86,10 +86,10 @@ function listarImoveis() {
         }
     });
 
-    xhr.open("GET", "http://localhost:8080/anuncios");
+    xhr.open("GET", "http://192.168.0.107:8080/anuncios");
     xhr.setRequestHeader("content-type", "application/json");
-    //xhr.setRequestHeader("cache-control", "no-cache");
-    //xhr.setRequestHeader("postman-token", "a692c64d-ad47-e5f9-f9da-af82f6aa1d8a");
+    xhr.setRequestHeader("cache-control", "no-cache");
+    xhr.setRequestHeader("postman-token", "a692c64d-ad47-e5f9-f9da-af82f6aa1d8a");
 
     xhr.send(data);
 }
