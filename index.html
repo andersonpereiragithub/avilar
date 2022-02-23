@@ -45,62 +45,62 @@
                     </table>
                 </div>
             </li>
-                <li id="cad">
-                    <input type="radio" name="pastaS" class="rd_abas" id="aba3" style="display: none;">
-                    <label for="aba3">CADASTRO</label>
-                    <div class="contexto">
+            <li id="cad">
+                <input type="radio" name="pastaS" class="rd_abas" id="aba3" style="display: none;">
+                <label for="aba3">CADASTRO</label>
+                <div class="contexto">
                                          <!--TABELA DE CADASTRO-->
-                        <div id="title">
+                    <div id="title">
                                              <h3>Cadastrar de imóvel</h3>
-                        </div>
-                        <form action="#">
-                            <fieldset>
-                                <input type="text" name="numCep" id="id_cep" onblur="pesquisacep(this.value)" placeholder="Busca Endereço pelo CEP">
-                                <div class="end">
-                                    <input type="text" name="endereco" id="id_end" placeholder="Endereço...">
-                                    <input type="text" name="numero" id="num" placeholder="Nº..." tabindex="2">
+                    </div>
+                    <form action="#">
+                        <fieldset>
+                            <input type="text" name="numCep" id="id_cep" onblur="pesquisacep(this.value)" placeholder="Busca Endereço pelo CEP">
+                            <div class="end">
+                                <input type="text" name="endereco" id="id_end" placeholder="Endereço...">
+                                <input type="text" name="numero" id="num" placeholder="Nº..." tabindex="2">
                                 </div>
-                            </fieldset>
-                            <fieldset>
-                                <div>
-                                    <textarea id="txtarea" rows="0" cols="0" placeholder="Descrição do imóvel" tabindex="3"></textarea>
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <div>
-                                    <input type="text" name="numAluguel" id="id_aluguel" placeholder="Aluguel... R$ " tabindex="4">
-                                </div>
-                                <div>
-                                    <input type="text" name="numIptu" id="id_iptu" placeholder="R$ IPTU..." tabindex="5">
-                                </div>
-                                <div>
-                                    <input type="text" name="numCond" id="id_cond" placeholder="R$ Condomínio..." tabindex="5">
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <div class="tipo">
-                                    <select name="tipoimovel" id="id_tipo" tabindex="7">
-                                        <option value="Tipo de Imóvel" disabled="disabled"  selected="selected">Tipo de Imóvel</option>
+                        </fieldset>
+                        <fieldset>
+                            <div>
+                                <textarea id="txtarea" rows="0" cols="0" placeholder="Descrição do imóvel" tabindex="3"></textarea>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div>
+                                <input type="text" name="numAluguel" id="id_aluguel" placeholder="Aluguel... R$ " tabindex="4">
+                            </div>
+                            <div>
+                                <input type="text" name="numIptu" id="id_iptu" placeholder="R$ IPTU..." tabindex="5">
+                            </div>
+                            <div>
+                                <input type="text" name="numCond" id="id_cond" placeholder="R$ Condomínio..." tabindex="5">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="tipo">
+                                <select name="tipoimovel" id="id_tipo" tabindex="7">
+                                    <option value="Tipo de Imóvel" disabled="disabled"  selected="selected">Tipo de Imóvel</option>
                                         <option value="Apto">Apartamento</option>
                                         <option value="Casa">Casa Comercial</option>
                                         <option value="Loja">Loja</option>
                                         <option value="Sala">Sala</option>
                                         <option value="Galpao">Galpão</option>
-                                    </select>
-                                    <select name="tipoimovel" id="id_status" tabindex="8">
-                                        <option value="Status do Imóvel" disabled="disabled"  selected="selected">Status</option>
-                                        <option value="1">Disponível</option>
-                                        <option value="0">Indisponível</option>
-                                    </select>
-                                </div>
-                            </fieldset>
-                            <div>
-                                <button type="submit" value="Enviar" id="btnEnviar" tabindex="9" onclick="salvarImovel()">Enviar</button>
+                                </select>
+                                <select name="tipoimovel" id="id_status" tabindex="8">
+                                    <option value="Status do Imóvel" disabled="disabled"  selected="selected">Status</option>
+                                    <option value="1">Disponível</option>
+                                    <option value="0">Indisponível</option>
+                                </select>
                             </div>
-                        </form>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+                        </fieldset>
+                        <div>
+                            <button type="submit" value="Enviar" id="btnEnviar" tabindex="9" onclick="salvarImovel()">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
