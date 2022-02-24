@@ -1,4 +1,4 @@
-class Anuncio{
+   /*class Anuncio{
     constructor(id, endereco, aluguel, iptu, condominio, tipo, descricao){
         this._id = id;
         this._endereco = endereco;
@@ -10,9 +10,9 @@ class Anuncio{
         this._Total = 0.00;
     }
 
-    /**
+    
      * @param {any} id
-     */
+    
     set setId(id){
         this._id = id;
     }
@@ -63,7 +63,7 @@ class Anuncio{
     }
 }
 
-    /*var an01 = new Anuncio('apto01', 'Rua Santo Antônio, nº 266/705', 700.00, 114.00, 310.00, 'apartamento', 'Quarto e sala com armários - área 44m2');
+ var an01 = new Anuncio('apto01', 'Rua Santo Antônio, nº 266/705', 700.00, 114.00, 310.00, 'apartamento', 'Quarto e sala com armários - área 44m2');
     var an02 = new Anuncio("apto02", "Rua Chanceler Oswaldo Aranha, nº 180/402", 1100.00, 155.56, 500.00, "apartamento", "03 quartos, garagem, com elevador - área 90m2");
     var an03 = new Anuncio("apto03", "Rua Gil Horta, 90", 1200.00, 247.52, 220.00, "apartamento", "03 quartos, garagem, sem elevador - área 112m2");
     var an04 = new Anuncio("apto04", "Rua Luz Interior, 0",	5000.00, 550.00, 0.00, "terreno", "Terreno 644m2");

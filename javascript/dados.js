@@ -1,4 +1,3 @@
-//import Anuncio from "./Anuncio.js";
 
     var an01 = new Anuncio('apto01', 'Rua Santo Antônio, nº 266/705', 700.00, 114.00, 31000, 'apartamento', 'Quarto e sala com armários - área 44m2');
     var an02 = new Anuncio("apto02", "Rua Chanceler Oswaldo Aranha, nº 180/402", 1100.00, 155.56, 500.00, "apartamento", "03 quartos, garagem, com elevador - área 90m2");
@@ -31,7 +30,5 @@
     const arrayAnuncio = [an01, an02, an03, an04, an01, an05, an06, an07, an08, an09, 
                         an10, an11, an12, an13, an14, an15, an16, an17, an18, an19, 
                         an20, an21, an22, an23, an24, an25];
-
+                    
     export default arrayAnuncio;
-
- 

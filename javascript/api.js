@@ -1,5 +1,9 @@
+var btnEnviar = document.getElementById('btnEnviar');
 
-function salvarImovel() {
+btnEnviar.addEventListener("click", salvarImovel());
+
+export function salvarImovel() {
+    console.log('Chamou!');
     var endereco = document.getElementById('id_end').value;
     var num = document.getElementById('num').value;
     var aluguel = document.getElementById('id_aluguel').value;
@@ -20,7 +24,7 @@ function salvarImovel() {
     });
     
     var xhr = new XMLHttpRequest();
-    //xhr.withCredentials = true;
+    xhr.withCredentials = true;
 
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
@@ -36,7 +40,7 @@ function salvarImovel() {
     xhr.send(data);
 }
 
-function listarImoveis() {
+export function listarImoveis() {
     var data = null;
 
     var xhr = new XMLHttpRequest();
