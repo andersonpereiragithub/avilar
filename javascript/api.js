@@ -1,8 +1,10 @@
-var btnEnviar = document.getElementById('btnEnviar');
+var mainBody = document.getElementsByTagName('body');
+mainBody.addEventListener("onload", listarImoveis());
 
+var btnEnviar = document.getElementById('btnEnviar');
 btnEnviar.addEventListener("click", salvarImovel());
 
-export function salvarImovel() {
+function salvarImovel() {
     console.log('Chamou!');
     var endereco = document.getElementById('id_end').value;
     var num = document.getElementById('num').value;
@@ -40,7 +42,7 @@ export function salvarImovel() {
     xhr.send(data);
 }
 
-export function listarImoveis() {
+function listarImoveis() {
     var data = null;
 
     var xhr = new XMLHttpRequest();
