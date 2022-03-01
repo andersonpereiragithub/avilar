@@ -14,41 +14,7 @@ function listarImoveis() {
             const obj = JSON.parse(json);
             
             var anuncios = obj;
-
-            var tbody = document.getElementById('tbody');
-            var i = 0;
-
-            for(let i = 0; i < anuncios.length; i++){
-                let tr = tbody.insertRow();
-                let td_end = tr.insertCell() ;
-                let td_aluguel = tr.insertCell();
-                let td_iptu = tr.insertCell();
-                let td_cond = tr.insertCell();
-                let td_total = tr.insertCell();
-                let tr_desc = tbody.insertRow();
-                
-                td_end.innerText = anuncios[i].endereco;
-                td_aluguel.innerText = anuncios[i].aluguel.toFixed(2).replace('.', ',');
-                td_iptu.innerText = anuncios[i].iptu.toFixed(2).replace('.', ',');
-                td_cond.innerText = anuncios[i].condominio.toFixed(2).replace('.', ',');
-                tr_desc.innerText = anuncios[i].descricao;
-                
-                let somaTotal = anuncios[i].aluguel + anuncios[i].iptu + anuncios[i].condominio;
-                td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
-                
-                tr.setAttribute('id', `${anuncios[i].id}`);
-                tr.setAttribute('class', 'dados');
-                td_end.setAttribute('class', 'end');
-                td_aluguel.setAttribute('class', 'valor');
-                td_iptu.setAttribute('class', 'valor');
-                td_cond.setAttribute('class', 'valor');
-                td_total.setAttribute('class', 'tot');
-                tr.setAttribute('onmouseover', 'showDesc(this.id)');
-                tr.setAttribute('onmouseout', 'hiddenDesc(this.id)');
-                tr_desc.setAttribute('id', `${anuncios[i].id}` + '_sub');
-                tr_desc.setAttribute('classe', 'dados');
-                tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
-            }
+            criarLinha(anuncios);
         }
     });
 
@@ -58,4 +24,40 @@ function listarImoveis() {
     xhr.setRequestHeader("postman-token", "a692c64d-ad47-e5f9-f9da-af82f6aa1d8a");
 
     xhr.send(data);
+}
+
+function criarLinha(anuncios){
+    var tbody = document.getElementById('tbody');
+
+    for(let i = 0; i < anuncios.length; i++){
+        let tr = tbody.insertRow();
+        let td_end = tr.insertCell() ;
+        let td_aluguel = tr.insertCell();
+        let td_iptu = tr.insertCell();
+        let td_cond = tr.insertCell();
+        let td_total = tr.insertCell();
+        let tr_desc = tbody.insertRow();
+        
+        td_end.innerText = anuncios[i].endereco;
+        td_aluguel.innerText = anuncios[i].aluguel.toFixed(2).replace('.', ',');
+        td_iptu.innerText = anuncios[i].iptu.toFixed(2).replace('.', ',');
+        td_cond.innerText = anuncios[i].condominio.toFixed(2).replace('.', ',');
+        tr_desc.innerText = anuncios[i].descricao;
+        
+        let somaTotal = anuncios[i].aluguel + anuncios[i].iptu + anuncios[i].condominio;
+        td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
+        
+        tr.setAttribute('id', `${anuncios[i].id}`);
+        tr.setAttribute('class', 'dados');
+        td_end.setAttribute('class', 'end');
+        td_aluguel.setAttribute('class', 'valor');
+        td_iptu.setAttribute('class', 'valor');
+        td_cond.setAttribute('class', 'valor');
+        td_total.setAttribute('class', 'tot');
+        tr.setAttribute('onmouseover', 'showDesc(this.id)');
+        tr.setAttribute('onmouseout', 'hiddenDesc(this.id)');
+        tr_desc.setAttribute('id', `${anuncios[i].id}` + '_sub');
+        tr_desc.setAttribute('classe', 'dados');
+        tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
+    }
 }
