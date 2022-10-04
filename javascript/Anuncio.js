@@ -82,6 +82,6 @@ function hiddenDesc(id){
     showDesc.style.opacity = "0";
 }
 
-var mainBody = document.querySelector('body');
+const body = document.querySelector('body');
 
-mainBody.addEventListener('loadstart', criaLista());
+body.addEventListener('loadstart', criaLista());
