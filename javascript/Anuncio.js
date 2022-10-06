@@ -2,7 +2,7 @@
  const arrayAnuncio = [
     {id:'apto01', logradouro: 'Rua Santo Antônio, nº 266/705', aluguel: 700.00, iptu: 114.00, condominio: 310.00, tipo: 'apartamento', descricao: 'Quarto e sala com armários - área 44m2'},
     {id:"apto02", logradouro: "Rua Chanceler Oswaldo Aranha, nº 180/402", aluguel: 1100.00, iptu: 155.56, condominio: 500.00, tipo: "apartamento", descricao: "03 quartos, garagem, com elevador - área 90m2"},
-    {id:"apto03", logradouro: "Rua Gil Horta, 90", aluguel: 1200.00, iptu: 247.52, condominio: 220.00, tipo:"apartamen", descricao:"03 quartos, garagem, sem elevador - área 112m2"},
+    {id:"apto03", logradouro: "Rua Gil Horta, 140", aluguel: 1200.00, iptu: 247.52, condominio: 220.00, tipo:"apartamen", descricao:"03 quartos, garagem, sem elevador - área 112m2"},
     {id:"apto04", logradouro: "Rua Luz Interior, 0",	aluguel: 5000.00, iptu: 550.00, condominio: 0.00, tipo:"terreno", descricao:"Terreno 644m2"},
     {id:"apto05", logradouro: "Rua Vila Vidal, 107 apto 04",	aluguel: 700.00,	iptu: 0.00, condominio: 0.00, tipo:"apartamento", descricao:"02 quartos pequenos, área fundos"},
     {id:"apto06", logradouro: "Rua Vila Vidal, 107 apto 05",	aluguel: 700.00,	iptu: 0.00, condominio: 0.00, tipo:"apartamento", descricao:"02 quartos pequenos, área fundos"},
