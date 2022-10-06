@@ -26,7 +26,8 @@
     {id:"loja08", logradouro: "Rua Batista de Oliveira, nº 401 Lojas 25 - Gal. Bellini", aluguel: 1800.00, iptu: 159.01, condominio: 260.00, tipo:"loja", descricao:"Loja com sobreloja, banheiro - área 50m2"},
     {id:"loja09", logradouro: "Santa Cruz Shopping, 1685 Loja 1352", aluguel: 1600.00, iptu: 288.37, condominio: 1037.80, tipo:"loja", descricao:"Loja com sobreloja - área 50m2"},
     {id:"loja11", logradouro: "Rua José Lourenço, 1384 Loja 02", aluguel: 1000.00, iptu: 123.73, condominio: 0.00, tipo:"loja", descricao:"Loja SEM sobreloja, 02 banheiros - área 49m2"},
-    {id:"loja10", logradouro: "Mister Shoppig, 70 Loja 116", aluguel: 20000.00,iptu:  458.63, condominio: 2500.000, tipo:"loja", descricao:"Loja com sobreloja, banheiro - área 91m2"}]
+    {id:"loja10", logradouro: "Mister Shoppig, 70 Loja 116", aluguel: 20000.00, iptu:  458.63, condominio: 2500.000, tipo:"loja", descricao:"Loja com sobreloja, banheiro - área 91m2"},
+    {id:"loja12", logradouro: "Av. Br. do Rio Branco, 2244 Apto 1003", aluguel: 650.00, iptu:  137.00, condominio: 340.00, tipo:"apartamento", descricao:"quarto e sala conjugado com 02 guarda-roupas, banheiro - área 49m2"}]
 
 function criaLista(){
     let tbody = document.getElementById( 'tbody');
