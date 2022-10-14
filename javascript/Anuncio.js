@@ -68,7 +68,7 @@ function criaLista(){
         const isUnavailable = status === 'indisponivel'
         console.log(isUnavailable)
         if(isUnavailable) {
-            tr.style.backgroundColor = 'red'
+            tr.style.backgroundColor = '#efffd5'
         }
     }
     arrayAnuncio.forEach(insertTable)
