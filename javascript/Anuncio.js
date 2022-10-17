@@ -3,7 +3,7 @@
     {id:'apto01', logradouro: 'Rua Santo Antônio, nº 266/705', aluguel: 700.00, iptu: 114.00, condominio: 310.00, tipo: 'apartamento', descricao: 'Quarto e sala com armários - área 44m2', status: 'indisponivel'},
     {id:"apto02", logradouro: "Rua Chanceler Oswaldo Aranha, nº 180/402", aluguel: 1100.00, iptu: 155.56, condominio: 500.00, tipo: "apartamento", descricao: "03 quartos, garagem, com elevador - área 90m2", status: 'indisponivel'},
     {id:"apto03", logradouro: "Rua Gil Horta, 140", aluguel: 1200.00, iptu: 247.52, condominio: 220.00, tipo:"apartamen", descricao:"03 quartos, garagem, sem elevador - área 112m2", status: 'disponivel'},
-    {id:"apto04", logradouro: "Rua Luz Interior, 0",	aluguel: 5000.00, iptu: 550.00, condominio: 0.00, tipo:"terreno", descricao:"Terreno 644m2", status: 'disponivel'},
+    
     {id:"apto05", logradouro: "Rua Vila Vidal, 107 apto 04",	aluguel: 700.00,	iptu: 0.00, condominio: 0.00, tipo:"apartamento", descricao:"02 quartos pequenos, área fundos", status: 'disponivel'},
     {id:"apto06", logradouro: "Rua Vila Vidal, 107 apto 05",	aluguel: 700.00,	iptu: 0.00, condominio: 0.00, tipo:"apartamento", descricao:"02 quartos pequenos, área fundos", status: 'disponivel'},
     {id:"apto07", logradouro: "Rua Adelina Maria da Costa, 197 Apto 201", aluguel: 1000.00, iptu: 72.07, condominio: 0.00, tipo:"apartamento", descricao:"02 quartos, garagem e suíte - área 89m2}", status: 'disponivel'},
@@ -27,7 +27,11 @@
     {id:"loja09", logradouro: "Santa Cruz Shopping, 1685 Loja 1352", aluguel: 1600.00, iptu: 288.37, condominio: 1037.80, tipo:"loja", descricao:"Loja com sobreloja - área 50m2", status: 'disponivel'},
     {id:"loja11", logradouro: "Rua José Lourenço, 1384 Loja 02", aluguel: 1000.00, iptu: 123.73, condominio: 0.00, tipo:"loja", descricao:"Loja SEM sobreloja, 02 banheiros - área 49m2", status: 'disponivel'},
     {id:"loja10", logradouro: "Mister Shoppig, 70 Loja 116", aluguel: 20000.00, iptu:  458.63, condominio: 2500.000, tipo:"loja", descricao:"Loja com sobreloja, banheiro - área 91m2", status: 'disponivel'},
-    {id:"loja12", logradouro: "Av. Br. do Rio Branco, 2244 Apto 1003", aluguel: 650.00, iptu:  137.00, condominio: 340.00, tipo:"apartamento", descricao:"quarto e sala conjugado com 02 guarda-roupas, banheiro - área 49m2", status: 'disponivel'}]
+    {id:"loja12", logradouro: "Av. Br. do Rio Branco, 2244 Apto 1003", aluguel: 650.00, iptu:  137.00, condominio: 340.00, tipo:"apartamento", descricao:"quarto e sala conjugado com 02 guarda-roupas, banheiro - área 49m2", status: 'disponivel'},
+
+    {id:"apto04", logradouro: "Rua Luz Interior, 0",	aluguel: 5000.00, iptu: 550.00, condominio: 0.00, tipo:"terreno", descricao:"Terreno 644m2", status: 'indisponivel'}
+]
+
 
 function criaLista(){
     let tbody = document.getElementById( 'tbody');
