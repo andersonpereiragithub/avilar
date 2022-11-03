@@ -27,7 +27,16 @@
     {id:"loja09", logradouro: "Santa Cruz Shopping, 1685 Loja 1352", aluguel: 1600.00, iptu: 288.37, condominio: 1037.80, tipo:"loja", descricao:"Loja com sobreloja - área 50m2", status: 'disponivel'},
     {id:"loja11", logradouro: "Rua José Lourenço, 1384 Loja 02", aluguel: 1000.00, iptu: 123.73, condominio: 0.00, tipo:"loja", descricao:"Loja SEM sobreloja, 02 banheiros - área 49m2", status: 'disponivel'},
     {id:"loja10", logradouro: "Mister Shoppig, 70 Loja 116", aluguel: 20000.00, iptu:  458.63, condominio: 2500.000, tipo:"loja", descricao:"Loja com sobreloja, banheiro - área 91m2", status: 'disponivel'},
-    {id:"loja12", logradouro: "Av. Br. do Rio Branco, 2244 Apto 1003", aluguel: 650.00, iptu:  137.00, condominio: 340.00, tipo:"apartamento", descricao:"quarto e sala conjugado com 02 guarda-roupas, banheiro - área 49m2", status: 'disponivel'},
+    {id:"loja12", logradouro: "Av. Br. do Rio Branco, 2244 Apto 1003", aluguel: 650.00, iptu: 137.00, condominio: 340.00, tipo:"apartamento", descricao:"quarto e sala conjugado com 02 guarda-roupas, banheiro - área 49m2", status: 'disponivel'},
+
+    {id:"sala29", logradouro: "Av. Br. do Rio Branco, 1843 sala 29", aluguel: 1500.00, iptu: 223.00, condominio: 211.00, tipo:"sala", descricao:"02 banheiros, área 60m2", status: 'disponivel'},
+    {id:"sala26", logradouro: "Av. Br. do Rio Branco, 1843 sala 26", aluguel: 1200.00, iptu: 157.40, condominio: 193.43, tipo:"sala", descricao:"01 banheiro, área 30m2", status: 'disponivel'},
+    {id:"sala25", logradouro: "Av. Br. do Rio Branco, 1843 sala 25", aluguel: 1000.00, iptu: 98.64, condominio: 148.16, tipo:"sala", descricao:"01 banheiro, área 30m2", status: 'disponivel'},
+    {id:"sala24", logradouro: "Av. Br. do Rio Branco, 1843 sala 24", aluguel: 1000.00, iptu: 103.45, condominio: 148.16, tipo:"sala", descricao:"01 banheiro, área 32m2", status: 'disponivel'},
+    {id:"sala23", logradouro: "Av. Br. do Rio Branco, 1843 sala 23", aluguel: 1000.00, iptu: 103.45, condominio: 148.16, tipo:"sala", descricao:"01 banheiro, área 32m2", status: 'disponivel'},
+    {id:"sala15", logradouro: "Av. Br. do Rio Branco, 1843 sala 15", aluguel: 1000.00, iptu: 66.50, condominio: 106.38, tipo:"sala", descricao:"01 banheiro, área 26m2", status: 'disponivel'},
+    {id:"sala13", logradouro: "Av. Br. do Rio Branco, 1843 sala 13", aluguel: 1000.00, iptu: 72.00, condominio: 106.38, tipo:"sala", descricao:"01 banheiro, área 32m2", status: 'disponivel'},
+    {id:"sala07", logradouro: "Av. Br. do Rio Branco, 1843 sala 07", aluguel: 1000.00, iptu: 130.92, condominio: 175.84, tipo:"sala", descricao:"01 banheiro, área 32m2", status: 'disponivel'},
 
     {id:"apto04", logradouro: "Rua Luz Interior, 0",	aluguel: 5000.00, iptu: 550.00, condominio: 0.00, tipo:"terreno", descricao:"Terreno 644m2", status: 'indisponivel'}
 ]
