@@ -2,7 +2,7 @@
  const arrayAnuncio = [
     {id:'apto01', logradouro: 'Rua Santo Antônio, nº 266/705', aluguel: 700.00, iptu: 114.00, condominio: 310.00, tipo: 'apartamento', descricao: 'Quarto e sala com armários - área 44m2', status: 'indisponivel'},
     {id:"apto02", logradouro: "Rua Chanceler Oswaldo Aranha, nº 180/402", aluguel: 1100.00, iptu: 155.56, condominio: 500.00, tipo: "apartamento", descricao: "03 quartos, garagem, com elevador - área 90m2", status: 'indisponivel'},
-    {id:"apto03", logradouro: "Rua Gil Horta, 140", aluguel: 1200.00, iptu: 247.52, condominio: 220.00, tipo:"apartamen", descricao:"03 quartos, garagem, sem elevador - área 112m2", status: 'disponivel'},
+    {id:"apto03", logradouro: "Rua Gil Horta, 140", aluguel: 1200.00, iptu: 247.52, condominio: 220.00, tipo:"apartamento", descricao:"03 quartos, garagem, sem elevador - área 112m2", status: 'disponivel'},
     
     {id:"apto05", logradouro: "Rua Vila Vidal, 107 apto 04",	aluguel: 700.00,	iptu: 0.00, condominio: 0.00, tipo:"apartamento", descricao:"02 quartos pequenos, área fundos", status: 'disponivel'},
     {id:"apto06", logradouro: "Rua Vila Vidal, 107 apto 05",	aluguel: 700.00,	iptu: 0.00, condominio: 0.00, tipo:"apartamento", descricao:"02 quartos pequenos, área fundos", status: 'disponivel'},
@@ -11,12 +11,12 @@
     {id:"apto09", logradouro: "Rua Adelina Maria da Costa, 197 Apto 401", aluguel: 1100.00, iptu: 134.80, condominio: 0.00, tipo:"apartamento", descricao:"03 quartos, garagem e Suíte - área 145m2", status: 'disponivel'},
     {id:"apto10", logradouro: "Rua Carlos Herculano Couto, nº 150 Apto 303", aluguel: 700.00,	iptu: 34.77, condominio: 218.00, tipo:"apartamento", descricao:"02 quartos, área, garagem descoberta - área 52m2", status: 'disponivel'},
     
-    {id:"casa01", logradouro: "Av. Dos Andras, nº 43 Sobrado", aluguel: 5000.00, iptu: 535.46, condominio: 0.00, tipo:"comercial", descricao:"01 salão, 02 banheiros, cozinha, 02 quartinhos - 200m2", status: 'disponivel'},
-    {id:"casa02", logradouro: "Rua Dom Silvério, nº 59 Sobrado", aluguel: 2500.00, iptu: 241.92, condominio: 0.00, tipo:"comercial", descricao:"01 salão, 01 escritório, 01 banheiro e cozinha - área 80m2", status: 'disponivel'},
-    {id:"casa03", logradouro: "Rua Barão de São Marcelino, nº 385 Sobrado", aluguel: 3800.00, iptu: 378.52, condominio: 0.00, tipo:"comercial", descricao:"03 salas, 05 quartos, 03 banheiros - área 162m2", status: 'disponivel'},
-    {id:"casa04", logradouro: "Rua Uruguaiana, nº 94 Sobrado", aluguel: 5000.00, iptu: 255.98, condominio: 0.00, tipo:"casa comercial",descricao:"07 quartos, 01 sala, 01 copa, 03 banheiros, vagas para 04 carros - área 159m2", status: 'disponivel'},
+    {id:"casa01", logradouro: "Av. Dos Andras, nº 43 Sobrado", aluguel: 5000.00, iptu: 535.46, condominio: 0.00, tipo:"casa comercial", descricao:"01 salão, 02 banheiros, cozinha, 02 quartinhos - 200m2", status: 'disponivel'},
+    {id:"casa02", logradouro: "Rua Dom Silvério, nº 59 Sobrado", aluguel: 2500.00, iptu: 241.92, condominio: 0.00, tipo:"casa comercial", descricao:"01 salão, 01 escritório, 01 banheiro e cozinha - área 80m2", status: 'disponivel'},
+    {id:"casa03", logradouro: "Rua Barão de São Marcelino, nº 385 Sobrado", aluguel: 3800.00, iptu: 378.52, condominio: 0.00, tipo:"casa comercial", descricao:"03 salas, 05 quartos, 03 banheiros - área 162m2", status: 'disponivel'},
+    {id:"casa04", logradouro: "Rua Uruguaiana, nº 94 Sobrado", aluguel: 5000.00, iptu: 255.98, condominio: 0.00, tipo:"casa comercial",descricao:"07 quartos, 01 sala, 01 copa, 03 banheiros, vagas para 04 carros - área 159m2", status: 'indisponivel'},
 
-    {id:"loja01", logradouro: "Av. Presidente Costa e Silva, nº 1834",aluguel:  3700.00,iptu:  147.33, condominio: 0.00, tipo:"loja", descricao:"Loja com sobreloja, banheiro e área externa nos fundos - área 90m2", status: 'disponivel'},	
+    {id:"loja01", logradouro: "Av. Presidente Costa e Silva, nº 1834",aluguel:  3700.00,iptu:  147.33, condominio: 0.00, tipo:"loja", descricao:"Loja com sobreloja, banheiro e área externa nos fundos - área 90m2", status: 'indisponivel'},	
     {id:"loja02", logradouro: "Av. Br. do Rio Branco, 1829", aluguel: 4400.00, iptu: 238.63, condominio: 106.00, tipo:"loja", descricao:"Loja SEM mezanino - área 47m2", status: 'indisponivel'},
     {id:"loja03", logradouro: "Av. Br. do Rio Branco, 1833", aluguel: 4600.00, iptu: 238.35, condominio: 106.38, tipo:"loja", descricao:"Loja com mezanino em metal, banheiro - área 52m2", status: 'indisponivel'},
     {id:"loja04", logradouro: "Av. Br. do Rio Branco, 1835", aluguel: 5000.00, iptu: 282.85, condominio: 148.16, tipo:"loja", descricao:"Loja com mezanino em metal, banheiro - área 52m2", status: 'indisponivel'},
@@ -43,45 +43,240 @@
 
 
 function criaLista(){
-    let tbody = document.getElementById( 'tbody');
-    
+    let tbody = document.getElementById( 'tbody')
+    let tbody_ap = document.getElementById( 'tbody_ap')
+    let tbody_sala = document.getElementById( 'tbody_sala')
+    let tbody_loja = document.getElementById( 'tbody_loja')
+    let tbody_casaComercial = document.getElementById( 'tbody_casaComercial')
+    let tbody_terreno = document.getElementById( 'tbody_terreno')
+
     const insertTable = ({id, logradouro, aluguel, iptu, condominio, tipo, descricao, status}) =>{
-               
-        let tr = tbody.insertRow();
+        console.log(tipo)
+        if (tipo === 'apartamento') {
+            let tr = tbody_ap.insertRow();    
+            
+            let td_end = tr.insertCell() ;
+            let td_aluguel = tr.insertCell();
+            let td_iptu = tr.insertCell();
+            let td_cond = tr.insertCell();
+            let td_total = tr.insertCell();
+            console.log(td_end.innerText)
+            let tr_desc = tbody_ap.insertRow();
+            let somaTotal = aluguel + iptu + condominio
 
-        let td_end = tr.insertCell() ;
-        let td_aluguel = tr.insertCell();
-        let td_iptu = tr.insertCell();
-        let td_cond = tr.insertCell();
-        let td_total = tr.insertCell();
-        console.log(td_end.innerText)
-        let tr_desc = tbody.insertRow();
-        let somaTotal = aluguel + iptu + condominio
+            td_end.innerText = logradouro
+            td_aluguel.innerText = aluguel.toFixed(2).replace('.', ',');
+            td_iptu.innerText = iptu.toFixed(2).replace('.', ',');
+            td_cond.innerText = condominio.toFixed(2).replace('.', ',');
+            td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
+            tr_desc.innerText = descricao
+            
+            tr.setAttribute('id', `${id}`);
+            tr.setAttribute('class', 'dados');
+            td_end.setAttribute('class', 'end');
+            td_aluguel.setAttribute('class', 'valor');
+            td_iptu.setAttribute('class', 'valor');
+            td_cond.setAttribute('class', 'valor');
+            td_total.setAttribute('class', 'tot');
+            tr.setAttribute('onmouseover', 'showDesc(this.id)');
+            tr.setAttribute('onmouseout', 'hiddenDesc(this.id)');
+            tr_desc.setAttribute('id', `${id}_sub`);
+            tr_desc.setAttribute('classe', 'dados');
+            tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
 
-        td_end.innerText = logradouro
-        td_aluguel.innerText = aluguel.toFixed(2).replace('.', ',');
-        td_iptu.innerText = iptu.toFixed(2).replace('.', ',');
-        td_cond.innerText = condominio.toFixed(2).replace('.', ',');
-        td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
-        tr_desc.innerText = descricao
-        
-        tr.setAttribute('id', `${id}`);
-        tr.setAttribute('class', 'dados');
-        td_end.setAttribute('class', 'end');
-        td_aluguel.setAttribute('class', 'valor');
-        td_iptu.setAttribute('class', 'valor');
-        td_cond.setAttribute('class', 'valor');
-        td_total.setAttribute('class', 'tot');
-        tr.setAttribute('onmouseover', 'showDesc(this.id)');
-        tr.setAttribute('onmouseout', 'hiddenDesc(this.id)');
-        tr_desc.setAttribute('id', `${id}_sub`);
-        tr_desc.setAttribute('classe', 'dados');
-        tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
+            const isUnavailable = status === 'indisponivel'
+            console.log(isUnavailable)
+            if(isUnavailable) {
+                tr.style.backgroundColor = '#efffd5'
+            }
+        } else if (tipo === 'sala') {
+            let tr = tbody_sala.insertRow();    
+            
+            let td_end = tr.insertCell() ;
+            let td_aluguel = tr.insertCell();
+            let td_iptu = tr.insertCell();
+            let td_cond = tr.insertCell();
+            let td_total = tr.insertCell();
+            console.log(td_end.innerText)
+            let tr_desc = tbody_sala.insertRow();
+            let somaTotal = aluguel + iptu + condominio
 
-        const isUnavailable = status === 'indisponivel'
-        console.log(isUnavailable)
-        if(isUnavailable) {
-            tr.style.backgroundColor = '#efffd5'
+            td_end.innerText = logradouro
+            td_aluguel.innerText = aluguel.toFixed(2).replace('.', ',');
+            td_iptu.innerText = iptu.toFixed(2).replace('.', ',');
+            td_cond.innerText = condominio.toFixed(2).replace('.', ',');
+            td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
+            tr_desc.innerText = descricao
+            
+            tr.setAttribute('id', `${id}`);
+            tr.setAttribute('class', 'dados');
+            td_end.setAttribute('class', 'end');
+            td_aluguel.setAttribute('class', 'valor');
+            td_iptu.setAttribute('class', 'valor');
+            td_cond.setAttribute('class', 'valor');
+            td_total.setAttribute('class', 'tot');
+            tr.setAttribute('onmouseover', 'showDesc(this.id)');
+            tr.setAttribute('onmouseout', 'hiddenDesc(this.id)');
+            tr_desc.setAttribute('id', `${id}_sub`);
+            tr_desc.setAttribute('classe', 'dados');
+            tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
+
+            const isUnavailable = status === 'indisponivel'
+            console.log(isUnavailable)
+            if(isUnavailable) {
+                tr.style.backgroundColor = '#efffd5'
+            }
+        } else if (tipo === 'loja') {
+            let tr = tbody_loja.insertRow();    
+            
+            let td_end = tr.insertCell() ;
+            let td_aluguel = tr.insertCell();
+            let td_iptu = tr.insertCell();
+            let td_cond = tr.insertCell();
+            let td_total = tr.insertCell();
+            console.log(td_end.innerText)
+            let tr_desc = tbody_loja.insertRow();
+            let somaTotal = aluguel + iptu + condominio
+
+            td_end.innerText = logradouro
+            td_aluguel.innerText = aluguel.toFixed(2).replace('.', ',');
+            td_iptu.innerText = iptu.toFixed(2).replace('.', ',');
+            td_cond.innerText = condominio.toFixed(2).replace('.', ',');
+            td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
+            tr_desc.innerText = descricao
+            
+            tr.setAttribute('id', `${id}`);
+            tr.setAttribute('class', 'dados');
+            td_end.setAttribute('class', 'end');
+            td_aluguel.setAttribute('class', 'valor');
+            td_iptu.setAttribute('class', 'valor');
+            td_cond.setAttribute('class', 'valor');
+            td_total.setAttribute('class', 'tot');
+            tr.setAttribute('onmouseover', 'showDesc(this.id)');
+            tr.setAttribute('onmouseout', 'hiddenDesc(this.id)');
+            tr_desc.setAttribute('id', `${id}_sub`);
+            tr_desc.setAttribute('classe', 'dados');
+            tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
+
+            const isUnavailable = status === 'indisponivel'
+            console.log(isUnavailable)
+            if(isUnavailable) {
+                tr.style.backgroundColor = '#efffd5'
+            }
+        } else if (tipo === 'casa comercial') {
+            console.log('Entrou casa!')
+            let tr = tbody_casaComercial.insertRow();    
+            
+            let td_end = tr.insertCell() ;
+            let td_aluguel = tr.insertCell();
+            let td_iptu = tr.insertCell();
+            let td_cond = tr.insertCell();
+            let td_total = tr.insertCell();
+            console.log(td_end.innerText)
+            let tr_desc = tbody_casaComercial.insertRow();
+            let somaTotal = aluguel + iptu + condominio
+
+            td_end.innerText = logradouro
+            td_aluguel.innerText = aluguel.toFixed(2).replace('.', ',');
+            td_iptu.innerText = iptu.toFixed(2).replace('.', ',');
+            td_cond.innerText = condominio.toFixed(2).replace('.', ',');
+            td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
+            tr_desc.innerText = descricao
+            
+            tr.setAttribute('id', `${id}`);
+            tr.setAttribute('class', 'dados');
+            td_end.setAttribute('class', 'end');
+            td_aluguel.setAttribute('class', 'valor');
+            td_iptu.setAttribute('class', 'valor');
+            td_cond.setAttribute('class', 'valor');
+            td_total.setAttribute('class', 'tot');
+            tr.setAttribute('onmouseover', 'showDesc(this.id)');
+            tr.setAttribute('onmouseout', 'hiddenDesc(this.id)');
+            tr_desc.setAttribute('id', `${id}_sub`);
+            tr_desc.setAttribute('classe', 'dados');
+            tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
+
+            const isUnavailable = status === 'indisponivel'
+            console.log(isUnavailable)
+            if(isUnavailable) {
+                tr.style.backgroundColor = '#efffd5'
+            }
+        } else if (tipo === 'terreno') {
+            console.log('Entrou apartamento!')
+            let tr = tbody_terreno.insertRow();    
+            
+            let td_end = tr.insertCell() ;
+            let td_aluguel = tr.insertCell();
+            let td_iptu = tr.insertCell();
+            let td_cond = tr.insertCell();
+            let td_total = tr.insertCell();
+            console.log(td_end.innerText)
+            let tr_desc = tbody_terreno.insertRow();
+            let somaTotal = aluguel + iptu + condominio
+
+            td_end.innerText = logradouro
+            td_aluguel.innerText = aluguel.toFixed(2).replace('.', ',');
+            td_iptu.innerText = iptu.toFixed(2).replace('.', ',');
+            td_cond.innerText = condominio.toFixed(2).replace('.', ',');
+            td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
+            tr_desc.innerText = descricao
+            
+            tr.setAttribute('id', `${id}`);
+            tr.setAttribute('class', 'dados');
+            td_end.setAttribute('class', 'end');
+            td_aluguel.setAttribute('class', 'valor');
+            td_iptu.setAttribute('class', 'valor');
+            td_cond.setAttribute('class', 'valor');
+            td_total.setAttribute('class', 'tot');
+            tr.setAttribute('onmouseover', 'showDesc(this.id)');
+            tr.setAttribute('onmouseout', 'hiddenDesc(this.id)');
+            tr_desc.setAttribute('id', `${id}_sub`);
+            tr_desc.setAttribute('classe', 'dados');
+            tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
+
+            const isUnavailable = status === 'indisponivel'
+            console.log(isUnavailable)
+            if(isUnavailable) {
+                tr.style.backgroundColor = '#efffd5'
+            }
+        } else {
+            console.log('Entrou outros!')
+            let tr = tbody.insertRow();
+            
+            let td_end = tr.insertCell() ;
+            let td_aluguel = tr.insertCell();
+            let td_iptu = tr.insertCell();
+            let td_cond = tr.insertCell();
+            let td_total = tr.insertCell();
+            console.log(td_end.innerText)
+            let tr_desc = tbody.insertRow();
+            let somaTotal = aluguel + iptu + condominio
+
+            td_end.innerText = logradouro
+            td_aluguel.innerText = aluguel.toFixed(2).replace('.', ',');
+            td_iptu.innerText = iptu.toFixed(2).replace('.', ',');
+            td_cond.innerText = condominio.toFixed(2).replace('.', ',');
+            td_total.innerText = somaTotal.toFixed(2).replace('.', ',');
+            tr_desc.innerText = descricao
+            
+            tr.setAttribute('id', `${id}`);
+            tr.setAttribute('class', 'dados');
+            td_end.setAttribute('class', 'end');
+            td_aluguel.setAttribute('class', 'valor');
+            td_iptu.setAttribute('class', 'valor');
+            td_cond.setAttribute('class', 'valor');
+            td_total.setAttribute('class', 'tot');
+            tr.setAttribute('onmouseover', 'showDesc(this.id)');
+            tr.setAttribute('onmouseout', 'hiddenDesc(this.id)');
+            tr_desc.setAttribute('id', `${id}_sub`);
+            tr_desc.setAttribute('classe', 'dados');
+            tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
+
+            const isUnavailable = status === 'indisponivel'
+            console.log(isUnavailable)
+            if(isUnavailable) {
+                tr.style.backgroundColor = '#efffd5'
+            }
         }
     }
     arrayAnuncio.forEach(insertTable)
@@ -104,4 +299,4 @@ function hiddenDesc(id){
 
 const body = document.querySelector('body');
 
-body.addEventListener('loadstart', criaLista());
+body.addEventListener('loadstart', criaLista())
