@@ -15,6 +15,8 @@
     {id:"apto13", logradouro: "Rua Adelina Maria da Costa, 197 Apto 101", aluguel: 1000.00, iptu: 72.07, condominio: 0.00, tipo:"apartamento", descricao:"02 quartos, garagem e suíte - área 89m2}", status: 'disponivel'},
     {id:"apto14", logradouro: "Rua Trino Fabri, nº 84 casa 03", aluguel: 800.00,	iptu: 15.91, condominio: 0.00, tipo:"apartamento", descricao:"02 quartos, garagem, área 25m2", status: 'disponivel'},
     {id:"apto15", logradouro: "Rua Trino Fabri, nº 80 casa fundos", aluguel: 650.00,	iptu: 0.00, condominio: 0.00, tipo:"apartamento", descricao:"01 quartos, 2o. andar", status: 'disponivel'},
+    {id:"apto16", logradouro: "Rua Antônio Marinho Saraiva, nº 185 Apto 101", aluguel: 1980.00,	iptu: 187.38, condominio: 265.00, tipo:"apartamento", descricao:"03 quartos, suíte, garagem para 2 carros, área de serviço", status: 'disponivel'},
+    {id:"apto17", logradouro: "Rua Luiz Perry, nº 496", aluguel: 1000.00,	iptu: 113.18, condominio: 0.00, tipo:"apartamento", descricao:"02 quartos pequenos, garagem, área 71m2", status: 'disponivel'},
     
     {id:"casa01", logradouro: "Av. Dos Andras, nº 43 Sobrado", aluguel: 5000.00, iptu: 535.46, condominio: 0.00, tipo:"casa comercial", descricao:"01 salão, 02 banheiros, cozinha, 02 quartinhos - 200m2", status: 'disponivel'},
     {id:"casa02", logradouro: "Rua Dom Silvério, nº 59 Sobrado", aluguel: 2500.00, iptu: 241.92, condominio: 0.00, tipo:"casa comercial", descricao:"01 salão, 01 escritório, 01 banheiro e cozinha - área 80m2", status: 'disponivel'},
@@ -46,7 +48,6 @@
     {id:"apto04", logradouro: "Rua Luz Interior, 0",	aluguel: 5000.00, iptu: 550.00, condominio: 0.00, tipo:"terreno", descricao:"Terreno 644m2", status: 'indisponivel'}
 ]
 
-
 function criaLista(){
     let tbody = document.getElementById( 'tbody')
     let tbody_ap = document.getElementById( 'tbody_ap')
@@ -56,16 +57,15 @@ function criaLista(){
     let tbody_terreno = document.getElementById( 'tbody_terreno')
 
     const insertTable = ({id, logradouro, aluguel, iptu, condominio, tipo, descricao, status}) =>{
-        console.log(tipo)
         if (tipo === 'apartamento') {
             let tr = tbody_ap.insertRow();    
             
             let td_end = tr.insertCell() ;
+            console.log(td_end)
             let td_aluguel = tr.insertCell();
             let td_iptu = tr.insertCell();
             let td_cond = tr.insertCell();
             let td_total = tr.insertCell();
-            console.log(td_end.innerText)
             let tr_desc = tbody_ap.insertRow();
             let somaTotal = aluguel + iptu + condominio
 
@@ -90,7 +90,6 @@ function criaLista(){
             tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
 
             const isUnavailable = status === 'indisponivel'
-            console.log(isUnavailable)
             if(isUnavailable) {
                 tr.style.backgroundColor = '#efffd5'
             }
@@ -102,7 +101,6 @@ function criaLista(){
             let td_iptu = tr.insertCell();
             let td_cond = tr.insertCell();
             let td_total = tr.insertCell();
-            console.log(td_end.innerText)
             let tr_desc = tbody_sala.insertRow();
             let somaTotal = aluguel + iptu + condominio
 
@@ -127,7 +125,6 @@ function criaLista(){
             tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
 
             const isUnavailable = status === 'indisponivel'
-            console.log(isUnavailable)
             if(isUnavailable) {
                 tr.style.backgroundColor = '#efffd5'
             }
@@ -139,7 +136,6 @@ function criaLista(){
             let td_iptu = tr.insertCell();
             let td_cond = tr.insertCell();
             let td_total = tr.insertCell();
-            console.log(td_end.innerText)
             let tr_desc = tbody_loja.insertRow();
             let somaTotal = aluguel + iptu + condominio
 
@@ -164,12 +160,10 @@ function criaLista(){
             tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
 
             const isUnavailable = status === 'indisponivel'
-            console.log(isUnavailable)
             if(isUnavailable) {
                 tr.style.backgroundColor = '#efffd5'
             }
         } else if (tipo === 'casa comercial') {
-            console.log('Entrou casa!')
             let tr = tbody_casaComercial.insertRow();    
             
             let td_end = tr.insertCell() ;
@@ -177,7 +171,6 @@ function criaLista(){
             let td_iptu = tr.insertCell();
             let td_cond = tr.insertCell();
             let td_total = tr.insertCell();
-            console.log(td_end.innerText)
             let tr_desc = tbody_casaComercial.insertRow();
             let somaTotal = aluguel + iptu + condominio
 
@@ -202,12 +195,10 @@ function criaLista(){
             tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
 
             const isUnavailable = status === 'indisponivel'
-            console.log(isUnavailable)
             if(isUnavailable) {
                 tr.style.backgroundColor = '#efffd5'
             }
         } else if (tipo === 'terreno') {
-            console.log('Entrou apartamento!')
             let tr = tbody_terreno.insertRow();    
             
             let td_end = tr.insertCell() ;
@@ -215,7 +206,6 @@ function criaLista(){
             let td_iptu = tr.insertCell();
             let td_cond = tr.insertCell();
             let td_total = tr.insertCell();
-            console.log(td_end.innerText)
             let tr_desc = tbody_terreno.insertRow();
             let somaTotal = aluguel + iptu + condominio
 
@@ -240,12 +230,10 @@ function criaLista(){
             tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
 
             const isUnavailable = status === 'indisponivel'
-            console.log(isUnavailable)
             if(isUnavailable) {
                 tr.style.backgroundColor = '#efffd5'
             }
         } else {
-            console.log('Entrou outros!')
             let tr = tbody.insertRow();
             
             let td_end = tr.insertCell() ;
@@ -253,7 +241,6 @@ function criaLista(){
             let td_iptu = tr.insertCell();
             let td_cond = tr.insertCell();
             let td_total = tr.insertCell();
-            console.log(td_end.innerText)
             let tr_desc = tbody.insertRow();
             let somaTotal = aluguel + iptu + condominio
 
@@ -278,7 +265,6 @@ function criaLista(){
             tr_desc.setAttribute('style', 'opacity: 0; width: 20px');
 
             const isUnavailable = status === 'indisponivel'
-            console.log(isUnavailable)
             if(isUnavailable) {
                 tr.style.backgroundColor = '#efffd5'
             }
