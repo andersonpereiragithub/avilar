@@ -17,6 +17,7 @@
     {id:"apto15", logradouro: "Rua Trino Fabri, nº 80 casa fundos", aluguel: 650.00,	iptu: 0.00, condominio: 0.00, tipo:"apartamento", descricao:"01 quartos, 2o. andar", status: 'disponivel'},
     {id:"apto16", logradouro: "Rua Antônio Marinho Saraiva, nº 185 Apto 101", aluguel: 1980.00,	iptu: 187.38, condominio: 265.00, tipo:"apartamento", descricao:"03 quartos, suíte, garagem para 2 carros, área de serviço", status: 'disponivel'},
     {id:"apto17", logradouro: "Rua Luiz Perry, nº 496", aluguel: 1000.00,	iptu: 113.18, condominio: 0.00, tipo:"apartamento", descricao:"02 quartos pequenos, garagem, área 71m2", status: 'disponivel'},
+    {id:"loja18", logradouro: "Av. Br. do Rio Branco, 2244 Apto 1003", aluguel: 650.00, iptu: 137.00, condominio: 340.00, tipo:"apartamento", descricao:"quarto e sala conjugado com 02 guarda-roupas, banheiro - área 49m2", status: 'disponivel'},
     
     {id:"casa01", logradouro: "Av. Dos Andras, nº 43 Sobrado", aluguel: 5000.00, iptu: 535.46, condominio: 0.00, tipo:"casa comercial", descricao:"01 salão, 02 banheiros, cozinha, 02 quartinhos - 200m2", status: 'disponivel'},
     {id:"casa02", logradouro: "Rua Dom Silvério, nº 59 Sobrado", aluguel: 2500.00, iptu: 241.92, condominio: 0.00, tipo:"casa comercial", descricao:"01 salão, 01 escritório, 01 banheiro e cozinha - área 80m2", status: 'disponivel'},
@@ -32,9 +33,9 @@
     {id:"loja07", logradouro: "Rua Afonso Pinto da Mota, nº 30 Lojas 13/14", aluguel: 2000.00, iptu: 276.71, condominio: 250.78, tipo:"loja", descricao:"Loja SEM mezanino - área 41m2", status: 'indisponivel'},
     {id:"loja08", logradouro: "Rua Batista de Oliveira, nº 401 Lojas 25 - Gal. Bellini", aluguel: 1800.00, iptu: 159.01, condominio: 260.00, tipo:"loja", descricao:"Loja com sobreloja, banheiro - área 50m2", status: 'indisponivel'},
     {id:"loja09", logradouro: "Santa Cruz Shopping, 1685 Loja 1352", aluguel: 1600.00, iptu: 288.37, condominio: 1037.80, tipo:"loja", descricao:"Loja com sobreloja - área 50m2", status: 'disponivel'},
-    {id:"loja11", logradouro: "Rua José Lourenço, 1384 Loja 02", aluguel: 1000.00, iptu: 123.73, condominio: 0.00, tipo:"loja", descricao:"Loja SEM sobreloja, 02 banheiros - área 49m2", status: 'disponivel'},
     {id:"loja10", logradouro: "Mister Shoppig, 70 Loja 116", aluguel: 20000.00, iptu:  458.63, condominio: 2500.000, tipo:"loja", descricao:"Loja com sobreloja, banheiro - área 91m2", status: 'disponivel'},
-    {id:"loja12", logradouro: "Av. Br. do Rio Branco, 2244 Apto 1003", aluguel: 650.00, iptu: 137.00, condominio: 340.00, tipo:"apartamento", descricao:"quarto e sala conjugado com 02 guarda-roupas, banheiro - área 49m2", status: 'disponivel'},
+    {id:"loja11", logradouro: "Rua José Lourenço, 1384 Loja 02", aluguel: 1000.00, iptu: 123.73, condominio: 0.00, tipo:"loja", descricao:"Loja SEM sobreloja, 02 banheiros - área 49m2", status: 'disponivel'},
+    {id:"loja12", logradouro: "Av. Br. do Rio Branco, 907", aluguel: 5000.00, iptu: 283.00, condominio: 200.00, tipo:"loja", descricao:"área 47m2, 1 banheiro, sem sobreloja", status: 'disponivel'},
 
     {id:"sala29", logradouro: "Av. Br. do Rio Branco, 1843 sala 29", aluguel: 1500.00, iptu: 223.00, condominio: 211.00, tipo:"sala", descricao:"02 banheiros, área 60m2", status: 'disponivel'},
     {id:"sala26", logradouro: "Av. Br. do Rio Branco, 1843 sala 26", aluguel: 1200.00, iptu: 157.40, condominio: 193.43, tipo:"sala", descricao:"01 banheiro, área 30m2", status: 'disponivel'},
