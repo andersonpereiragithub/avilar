@@ -35,7 +35,7 @@
     {id:"loja09", logradouro: "Santa Cruz Shopping, 1685 Loja 1352", aluguel: 1600.00, iptu: 288.37, condominio: 1037.80, tipo:"loja", descricao:"Loja com sobreloja - área 50m2", status: 'disponivel'},
     {id:"loja10", logradouro: "Mister Shoppig, 70 Loja 116", aluguel: 20000.00, iptu:  458.63, condominio: 2500.000, tipo:"loja", descricao:"Loja com sobreloja, banheiro - área 91m2", status: 'disponivel'},
     {id:"loja11", logradouro: "Rua José Lourenço, 1384 Loja 02", aluguel: 1000.00, iptu: 123.73, condominio: 0.00, tipo:"loja", descricao:"Loja SEM sobreloja, 02 banheiros - área 49m2", status: 'disponivel'},
-    {id:"loja12", logradouro: "Av. Br. do Rio Branco, 907", aluguel: 5000.00, iptu: 283.00, condominio: 200.00, tipo:"loja", descricao:"área 47m2, 1 banheiro, sem sobreloja", status: 'disponivel'},
+    {id:"loja12", logradouro: "Av. Getúlio Vargas, 907", aluguel: 5000.00, iptu: 283.00, condominio: 200.00, tipo:"loja", descricao:"área 47m2, 1 banheiro, sem sobreloja", status: 'disponivel'},
 
     {id:"sala29", logradouro: "Av. Br. do Rio Branco, 1843 sala 29", aluguel: 1500.00, iptu: 223.00, condominio: 211.00, tipo:"sala", descricao:"02 banheiros, área 60m2", status: 'disponivel'},
     {id:"sala26", logradouro: "Av. Br. do Rio Branco, 1843 sala 26", aluguel: 1200.00, iptu: 157.40, condominio: 193.43, tipo:"sala", descricao:"01 banheiro, área 30m2", status: 'disponivel'},
